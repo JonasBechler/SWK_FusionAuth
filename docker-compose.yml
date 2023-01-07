@@ -45,4 +45,3 @@ networks:
 volumes:
   db_data:
   fusionauth_config:
-  search_data:
