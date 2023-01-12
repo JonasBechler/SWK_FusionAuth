@@ -1,0 +1,237 @@
+body {
+  background-color: #f6f6f6;
+  font-size: 16px;
+  color: black;
+  line-height: 23px;
+}
+
+strong,
+b,
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+body > main header.app-header {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  height: 60px;
+  position: absolute;
+}
+
+.input-addon-group .icon {
+  display: none;
+}
+
+.panel {
+  filter: drop-shadow(1px 0px 15px rgba(214, 214, 214, 0.3));
+  box-shadow: none;
+  border-radius: 12px;
+  border-top: 0;
+  padding-top: 0;
+}
+
+a {
+  color: #e2001a !important;
+}
+
+a:hover {
+  color: #cb172b !important;
+}
+
+label i.fa {
+  color: #e2001a !important;
+}
+
+.panel h2 {
+  background: url(https://res.cloudinary.com/dzft2fste/image/upload/v1665494481/bg-allgemein_fo4ojm.jpg)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.button {
+  font-weight: bold !important;
+  border-radius: 12px !important;
+  padding: 14px 20px 14px 20px !important;
+  font-size: 16px !important;
+  line-height: 1 !important;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.button.blue {
+  background: #e2001a !important;
+}
+
+.button.blue:hover {
+  background: #cb172b !important;
+}
+
+.button-outline {
+  color: #e2001a !important;
+  border: 1px solid #e2001a;
+}
+
+.button-outline:hover {
+  background: #e2001a !important;
+  color: white !important;
+}
+
+.button i {
+  display: none;
+}
+
+#logo {
+  padding: 10px;
+  max-height: 70px;
+}
+
+
+.input,
+input[type="email"],
+input[type="file"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  background-color: white;
+  box-shadow: none;
+  border: 1px solid #acacac !important;
+  border-radius: 12px !important;
+  font-size: 16px;
+  padding: 13px 16px;
+}
+
+label {
+  padding-left: 35px;
+  padding-top: 2px;
+  position: relative;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #acacac;
+  background-color: white;
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #e2001a !important;
+  border-color: #e2001a;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+#footer {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 790px) {
+  #footer {
+    position: relative;
+    bottom: 0px;
+    padding: 15px;
+    left: 0px;
+    display: block;
+  }
+  #logo {
+    padding: 10px;
+    max-height: 55px;
+  }
+  body>main header.app-header {
+    justify-content: center;
+  }
+}
+
+.register-message {
+  text-align: center;
+  position: relative;
+}
+
+.register-message:after {
+  height: 1px;
+  width: 100%;
+  content: "";
+  background-color: #808080;
+  position: absolute;
+  top: 23px;
+  left: 0;
+  z-index: -1;
+}
+
+.register-message p {
+  display: inline-block;
+  background-color: white;
+  padding: 0px 5px;
+  color: #808080;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.register-message a {
+  font-weight: bold !important;
+  border-radius: 12px !important;
+  padding: 14px 20px 14px 20px !important;
+  font-size: 16px !important;
+  line-height: 1 !important;
+  color: #e2001a !important;
+  border: 1px solid #e2001a;
+  width: 100% !important;
+  display: block;
+}
+
+.register-message a:hover {
+  background-color: #e2001a !important;
+  color: white !important;
+}
+
+.center {
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+.alert.info i {
+  color: #e2001a !important;
+}
+.alert.info {
+  border-left: 5px solid #e2001a !important;
+}
+
+.tooltip {
+  max-width: 450px !important;
+}

@@ -1,0 +1,544 @@
+#
+# Copyright (c) 2019-2021, FusionAuth, All Rights Reserved
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+# either express or implied. See the License for the specific
+# language governing permissions and limitations under the License.
+#
+
+## Wilken messages
+login-info=Bitte geben Sie Ihre Anmeldedaten an, um auf die Seite zuzugreifen.
+abort=Abbrechen
+[SSOSessionDeletedOrExpired]=Sie wurden automatisch abgemeldet.
+
+
+#
+# Text used on the page (inside the HTML). You can create new key-value pairs here and use them in the templates.
+#
+access-denied=Access denied
+account=Account
+add-two-factor=Add two-factor
+back-to-login=Return to Login
+cancel=Cancel
+captcha-google-branding=This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+authorized-not-registered=Registration is required to access this application and your account has not been registered for this application. Please complete your registration and try again.
+authorized-not-registered-title=Registration Required
+cancel-link=Cancel link request
+child-registration-not-allowed=Wir k\u00F6nnen kein Konto f\u00FCr dich erstellen. Deine Eltern oder Erziehungsberechtigten k\u00F6nnen ein Konto f\u00FCr dich erstellen. Gib ihre E-Mail-Adresse ein und wir werden sie bitten, dein Konto zu erstellen.
+click-here-to-logout=Click here to logout
+complete=Complete
+complete-registration=Registrierung abschliessen
+configure=Configure
+configured=Configured
+create-an-account=Ein Konto erstellen
+complete-external-login=Anmelden auf Ihrem externen Ger\u00E4t vervollst\u00E4ndigen&hellip;
+completed-link=You have successfully linked your %s account.
+completed-links=You have successfully linked your %s and %s account.
+confirm=Confirm
+device-form-title=Ger\u00E4te-Anmeldung
+device-login-complete=Ger\u00E4t erfolgreich verbunden
+device-title=Verbinden Sie Ihr Ger\u00E4t
+device-link-count-exceeded-next-step=To continue, click the button below. You will be logged out and then redirected here to continue the device login.
+device-link-count-exceeded-pending-logout=You are logged in as %s. No additional links may be made to %s.
+disable=Disable
+done=Done
+dont-have-an-account=Haben Sie noch kein Konto?
+edit=Edit
+email-verification-complete=Vielen Dank. Ihre E-Mail wurde best\u00E4tigt.
+email-verification-complete-title=E-Mail-Best\u00E4tigung abgeschlossen
+email-verification-form=Geben Sie Ihre E-Mail-Adresse erneut ein und fordern Sie eine neue Best\u00E4tigungs-E-Mail an.
+email-verification-form-title=E-Mail-Best\u00E4tigung
+email-verification-sent=Wir haben eine E-Mail mit Ihrem Best\u00E4tigungslink an %s gesendet. Folgen Sie den Anweisungen in der E-Mail, um Ihre E-Mail-Adresse zu best\u00E4tigen.
+email-verification-sent-title=Best\u00E4tigung gesendet
+email-verification-required-title=Verification required
+email-verification-required-send-another=Send me another email
+enabled=Enabled
+forgot-password=Haben Sie Ihr Passwort vergessen? Geben Sie Ihre E-Mail in das untenstehende Formular ein, um Ihr Passwort zur\u00FCckzusetzen.
+forgot-password-email-sent=Wir haben Ihnen eine E-Mail mit einem Link gesendet, \u00FCber den Sie Ihr Passwort zur\u00FCcksetzen k\u00F6nnen. Sobald Sie die E-Mail erhalten haben, folgen Sie den Anweisungen, um Ihr Passwort zu \u00E4ndern.
+forgot-password-email-sent-title=E-Mail gesendet
+forgot-password-title=Passwort vergessen
+forgot-your-password=Passwort vergessen?
+help=Hilfe
+instructions=Instructions
+ip-address=IP address
+link-to-existing-user=Link to an existing user
+link-to-new-user=Create a new user
+device-logged-in-as-not-you=You are logged in as %s. If you continue, the device login will be completed without an additional prompt. If this is not you, click logout before continuing.
+link-count-exceeded-next-step=To continue, click the button below. You will be logged out and then redirected here to link to an existing user or create a new user.
+link-count-exceeded-next-step-no-registration=To continue, click the button below. You will be logged out and then redirect here to link to an existing user.
+link-count-exceeded-pending-logout=You have already linked to %s and no additional links are allowed.
+logged-in-as=You are logged in as %s.
+login=Anmelden
+login-cancel-link=Or, cancel the link request.
+logout=Logout
+logout-and-continue=Logout and continue\u2026
+logging-out=Abmelden\u2026
+logout-title=Abmelden
+multi-factor-configuration=Multi-Factor configuration
+next=Weiter
+not-configured=Not configured
+note=Note:
+or=Oder
+parent-notified=Wir haben eine E-Mail an deine Eltern gesendet. Sie k\u00F6nnen ein Konto f\u00FCr dich erstellen, sobald sie sie erhalten haben.
+parent-notified-title=Eltern benachrichtigt
+password-alpha-constraint=Muss mindestens ein nicht-alphanumerisches Zeichen enthalten
+password-case-constraint=Muss sowohl Gross- als auch Kleinbuchstaben enthalten
+password-change-title=Ihr Passwort aktualisieren
+password-changed=Ihr Passwort wurde erfolgreich aktualisiert
+password-changed-title=Passwort aktualisiert
+password-constraints-intro=Passwort muss den folgenden Einschr\u00E4nkungen entsprechen:
+password-length-constraint=Muss zwischen %s und %s Zeichen lang sein
+password-number-constraint=Muss mindestens eine Ziffer enthalten
+password-previous-constraint=Darf nicht mit den vorherigen %s Passw\u00F6rtern \u00FCbereinstimmen
+passwordless-login=Passwortloses Anmelden
+passwordless-button-text=Mit magischem Link anmelden
+pending-link-info=You have successfully authenticated using %s.
+pending-link-next-step=To complete this request you may link to an existing user or create a new user.
+pending-link-next-step-no-registration=To complete this request you must link to an existing user.
+pending-link-login-to-complete=Login to complete your link to %s.
+pending-links-login-to-complete=Login to complete your link to %s and %s.
+pending-device-link=Continue to complete your link to %s.
+pending-device-links=Continue to complete your link to %s and %s.
+pending-link-register-to-complete=Register to complete your link to %s.
+pending-links-register-to-complete=Register to complete your link to %s and %s.
+profile=User Profile
+provide-parent-email=E-Mail der Eltern angeben
+register-cancel-link=Or, cancel the link request.
+registration-verification-complete=Danke. Ihre Registrierung wurde best\u00E4tigt.
+registration-verification-complete-title=Best\u00E4tigung der Registrierung abgeschlossen
+registration-verification-form=Vervollst\u00E4ndigen Sie das Formular, um eine neue Best\u00E4tigungs-E-Mail anzufordern.
+registration-verification-form-title=Best\u00E4tigung der Registrierung
+registration-verification-sent=Wir haben eine E-Mail mit Ihrem Best\u00E4tigungslink an %s gesendet. Folgen Sie den Anweisungen in der E-Mail, um Ihre Registrierungsadresse zu best\u00E4tigen.
+registration-verification-sent-title=Best\u00E4tigung gesendet
+registration-verification-required-title=Verification required
+registration-verification-required-send-another=Send me another email
+return-to-login=Zur\u00FCck zur Anmeldung
+send-another-code=Einen weiteren Code senden
+send-code-to-phone=Einen Code an Ihr Mobiltelefon senden
+set-up=Set up
+sms=SMS
+sign-in-as-different-user=Als anderer Benutzer anmelden
+start-idp-link-title=Link your account
+two-factor-challenge=Zwei-Faktor-Challenge
+two-factor-challenge-options=Authentication challenge
+two-factor-recovery-code=Recovery code
+two-factor-select-method=Didn't receive a code? Try another option
+two-factor-use-one-of-n-recover-codes=Use one of your %d recovery codes
+trust-computer=Diesem Computer f\u00FCr %s Tage vertrauen
+unauthorized=Unauthorized
+unauthorized-message=You are not authorized to make this request.
+unauthorized-message-blocked-ip=The owner of this website (%s) has blocked your IP address.
+value=Value
+wait-title=Anmelden auf Ihrem externen Ger\u00E4t vervollst\u00E4ndigen
+waiting=Warten
+
+# Locale Specific separators, etc
+#  - list separator - comma and a space
+listSeparator=,\u0020
+propertySeparator=:
+
+#
+# Success messages displayed at the top of the page. These are hard-coded in the FusionAuth code and the keys cannot be changed. You can
+# still change the values though.
+#
+sent-code=Code erfolgreich gesendet
+
+
+#
+# Labels for form fields. You can change the key names to anything you like but ensure that you don't change the name of the form fields.
+#
+birthDate=Geburtsdatum
+code=Geben Sie Ihren Best\u00E4tigungscode ein
+email=E-Mail
+firstName=Vorname
+fullName=Vollst\u00E4ndiger Name
+lastName=Nachname
+loginId=E-Mail
+middleName=Zweiter Vorname
+mobilePhone=Mobiltelefon
+password=Passwort
+passwordConfirm=Passwort best\u00E4tigen
+parentEmail=E-Mail der Eltern
+register=Registrieren
+register-step=Schritt %d von %d
+remember-device=Angemeldet bleiben
+news-letter-title=Newsletter:
+news-letter=Ich erkläre mich einverstanden, dass die Stadtwerke Konstanz GmbH (SKW) die von mir im Rahmen dieses Vertrages erhobenen Daten (Name, Anschrift, E-Mail-Adresse) für an mich per E-Mail gerichtete Werbung für Produkte und Dienstleistungen verarbeitet (Versand eines E-Mail-Newsletters mit Informationen zu unseren Produkten, Vertragsangeboten sowie Informationen über Sonderangebote und Rabattaktionen). Zu diesem Zweck darf die SWK die Daten auch an ihre Tochterunternehmen, die Bodensee-Schiffsbetriebe GmbH, die BGK – Bädergesellschaft Konstanz mbH, die Bodensee-Hafen-Gesellschaft (BHG) und die Katamaran-Reederei Bodensee GmbH & Co.KG weitergegeben.
+send=Senden
+submit=Senden
+update=Update
+username=Benutzername
+userCode=Geben Sie Ihren Benutzercode ein
+verify=Best\u00E4tigen
+
+#
+# Custom Registration forms. These must match the domain names.
+#
+registration.preferredLanguages=Languages
+registration.timezone=Timezone
+registration.username=Username
+user.birthDate=Geburtsdatum
+user.email=E-Mail
+user.firstName=First name
+user.fullName=Full name
+user.imageUrl=Image URL
+user.lastName=Last name
+user.mobilePhone=Mobile phone
+user.middleName=Middle name
+user.password=Passwort
+confirm.user.password=Confirm password
+user.preferredLanguages=Languages
+user.timezone=Timezone
+user.username=Username
+
+#
+# Self service account management
+#
+cancel-go-back=Cancel and go back
+change-password=Change password
+disable-instructions=Disable two-factor
+disable-two-factor=Disable two-factor
+edit-profile=Edit profile
+enable-instructions=Enable two-factor
+enable-two-factor=Enable two-factor
+go-back=Go back
+send-one-time-code=Send a one-time code
+
+#
+# Self service two-factor configuration
+#
+no-two-factor-methods-configured=No methods have been configured
+select-two-factor-method=Select a method
+two-factor-authentication=Two-factor authentication
+two-factor-method=Method
+
+# Form input place holders
+{placeholder}two-factor-code=Enter the one-time code
+
+#
+# Multi-factor configuration text
+#
+authenticator=Authenticator app
+
+# Authenticator Enable / Disable
+authenticator-disable-step-1=Enter the code from your authenticator app in the verification code field below to disable this two-factor method.
+authenticator-enable-step-1=Open your authentication app and add your account by scanning the QR code to the right or by manually entering the Base32 encoded secret <strong>%s</strong>.
+authenticator-enable-step-2=Once you have completed the first step, enter the code from your authenticator app in the verification code field below.
+
+# Email Enable / Disable
+email-disable-step-1=To disable two-factor using email, click the button to send a one-time use code to %s. Once you receive the code, enter it in the form below.
+email-enable-step-1=To enable two-factor using email, enter an email address and click the button to send a one-time use code. Once you receive the code, enter it in the form below.
+
+# SMS Enable / Disable
+sms-disable-step-1=To disable two-factor using SMS, click the button to send a one-time use code to %s. Once you receive the code, enter it in the form below.
+sms-enable-step-1=Two enable two-factor using SMS, enter a mobile phone and click the button to send a one-time use code. Once you receive the code, enter it in the form below.
+
+authenticator-configuration=Authenticator configuration
+verification-code=Verification code
+
+manage-two-factor=Manage two-factor
+go-back-to-send=Go back to send
+
+#
+# Multi-factor configuration descriptions
+#
+{description}two-factor-authentication=Two-factor authentication adds an additional layer of security to your account by requiring more than just a password to login. Configure one or more methods to utilize during login.
+{description}two-factor-methods-selection=A second step is required to complete sign in. Select one of the following methods to complete login.
+{description}two-factor-recovery-code-note=If you no longer have access to the device or application to obtain a verification code, you may use a recovery code to disable this two-factor method. Warning, when you use a recovery code to disable any two-factor method, all two-factor methods will be removed and all of your recovery codes will be cleared.
+{description}recovery-codes-1=Because this is the first time you have enabled two-factor, we have generated you %d recovery codes. These codes will not be shown again, so record them right now and store them in a safe place. These codes can be used to complete a two-factor login if you lose your device, and they can be used to disable two-factor authentication as well.
+{description}recovery-codes-2=Once you have recorded the codes, click Done to return to two-factor management.
+
+{description}email-verification-required-change-email=Confirm your email address is correct and update it if you mis-typed it during registration. Updating your address will also send you a new email to the new address.
+{description}email-verification-required=You must verify your email address before you continue.
+{description}email-verification-required-non-interactive=Email verification is configured to be completed outside of this request. Once you have verified your email, retry this request.
+
+{description}registration-verification-required=You must verify your registration before you continue.
+{description}registration-verification-required-non-interactive=Registration verification is configured to be completed outside of this request. Once you have verified your registration, retry this request.
+
+#
+# Custom Self Service User form sections.
+#
+# - Names are optional, and if not provided they will be labeled 'Section 1', 'Section 2', etc.
+# - The first section label will be omitted unless you specify a named label below. For your convenience, these
+#   sections are configured below and commented out as 'Optionally name me!'.
+#
+# - By default, all section labels will be used for all tenants and all applications that are using this theme.
+#
+# - If you want a section title that is specific to a tenant in a user form, you may optionally prefix the key with the Tenant Id.
+#
+#   For example, if the tenant Id is equal to: cbeaf8fe-f4a7-4a27-9f77-c609f1b01856
+#
+#   [cbeaf8fe-f4a7-4a27-9f77-c609f1b01856]{self-service-form}2=Tenant specific label for section 2
+#
+
+# {self-service-form}1=Optionally name me!
+# {self-service-form}2=
+
+#
+# Custom Admin User and Registration form sections.
+#
+# - Names are optional, and if not provided they will be labeled 'Section 1', 'Section 2', etc.
+# - The first section label on the User and and Registration form in the admin UI will be omitted unless
+#   you specify a named label below. For your convenience, these sections are configured below and commented out as 'Optionally name me!'.
+#
+# - By default, all section labels will be used for all tenants, and all applications respectively.
+#
+# - If you want a section title that is specific to a tenant in a user form, you may optionally prefix the key with the Tenant Id.
+#
+#   For example, if the tenant Id is equal to: cbeaf8fe-f4a7-4a27-9f77-c609f1b01856
+#
+#   [cbeaf8fe-f4a7-4a27-9f77-c609f1b01856]{user-form-section}2=Tenant specific label for section 2
+#
+# - If you want a section title that is specific to an Application in a registration form, you may optionally prefix the key with the Application Id.
+#
+#   For example, if the application Id is equal to: de2f91c7-c27a-4ad6-8be2-cfb36996cc89
+#
+#   [de2f91c7-c27a-4ad6-8be2-cfb36996cc89]{registration-form-section}2=Application specific label for section 2
+
+# {user-form-section}1=Optionally name me!
+{user-form-section}2=Options
+
+# {registration-form-section}1=Optionally name me!
+{registration-form-section}2=Options
+
+#
+# Custom Admin User and Registration tooltips
+#
+{tooltip}registration.preferredLanguages=Select one or more preferred languages
+{tooltip}user.preferredLanguages=Select one or more preferred languages
+
+#
+# Custom Registration form validation errors.
+#
+[confirm]user.password=Passwort best\u00E4tigen
+
+#
+# Default validation errors. Add custom messages by adding field messages.
+# For example, to provide a custom message for a string field named user.data.companyName, add the
+# following message key: [blank]user.data.companyName=Company name is required
+#
+[blank]=Erforderlich
+[blocked]=Not allowed
+[confirm]=Best\u00E4tigen
+[configured]=Already configured
+[couldNotConvert]=Ung\u00FCltig
+[doNotMatch]=Werte stimmen nicht \u00FCberein
+[duplicate]=Existiert bereits
+[empty]=Erforderlich
+[inUse]=Bereits benutzt
+[invalid]=Ung\u00FCltig
+[missing]=Erforderlich
+[mismatch]=Unexpected value
+[notEmail]=Ung\u00FCltige E-Mail
+[tooLong]=Zu lang
+[tooShort]=Zu kurz
+
+#
+# Tooltips. You can change the key names and values to anything you like.
+#
+{tooltip}remember-device=Aktivieren Sie diese Option, um angemeldet zu bleiben. Wählen Sie diese Option nicht auf einem öffentlichen Computer oder wenn dieses Gerät von mehreren Benutzern gemeinsam genutzt wird.
+{tooltip}news-letter=Meine Einwilligungen ist freiwillig und kann ich jederzeit insgesamt oder einzeln widerrufen. Durch den Widerruf der Einwilligung wird die Wirksamkeit des Vertrags im Übrigen nicht berührt. Mir entstehen durch die Nichterteilung oder den Widerruf der Einwilligung keine Nachteile. Den Newsletter können Sie über Ihren Account oder durch einem Link innerhalb jedes Newsletters jederzeit wieder deaktivieren. Darüber hinaus können Sie den Widerruf schriftlich an die Stadtwerke Konstanz GmbH, Max-Stromeyer-Straße 21-29, 78467 Konstanz oder newsletter@stadtwerke-konstanz.de richten.
+
+{tooltip}trustComputer=W\u00E4hlen Sie dies nicht auf einem \u00F6ffentlichen Computer aus. Wenn Sie diesem Computer vertrauen, k\u00F6nnen Sie die Zwei-Faktor-Authentisierung f\u00FCr die konfigurierte Dauer umgehen.
+
+
+#
+# Validation errors when forms are invalid. The format is [<error-code>]<field-name>. These are hard-coded in the FusionAuth code and the
+# keys cannot be changed. You can still change the values though.
+#
+[invalid]applicationId=Die angegebene Applikations-ID ist ung\u00FCltig.
+[blank]code=Erforderlich
+[invalid]code=Ung\u00FCltiger Code
+[blank]email=Erforderlich
+[blank]loginId=Erforderlich
+[blank]methodId=Select a two-factor method
+[blank]parentEmail=Erforderlich
+[blank]password=Erforderlich
+[blank]user_code=Erforderlich
+[blank]captcha_token=Required
+[invalid]captcha_token=Invalid challenge, try again
+[cannotSend]method=A message cannot be sent to an authenticator
+[disabled]method=Not enabled
+[invalid]user_code=Ung\u00FCltiger Benutzercode
+[notEqual]password=Passw\u00F6rter stimmen nicht \u00FCberein
+[onlyAlpha]password=Passwort ben\u00F6tigt ein nicht-alphanumerisches Zeichen
+[previouslyUsed]password=Passwort wurde k\u00FCrzlich verwendet
+[requireNumber]password=Passwort ben\u00F6tigt mindestens eine Ziffer
+[singleCase]password=Passwort ben\u00F6tigt Gross- und Kleinbuchstaben
+[tooYoung]password=Seit der letzten \u00C4nderung des Passworts ist zu wenig Zeit verstrichen, bitte versuchen Sie es sp\u00E4ter erneut
+[tooShort]password=Passwort entspricht nicht der Mindestl\u00E4nge
+[tooLong]password=Passwort \u00FCberschreitet die maximale L\u00E4nge
+[blank]passwordConfirm=Erforderlich
+[missing]user.birthDate=Erforderlich
+[couldNotConvert]user.birthDate=Ung\u00FCltig
+[blank]user.email=Erforderlich
+[blocked]user.email=Email address not allowed
+[notEmail]user.email=Ung\u00FCltige E-Mail
+[duplicate]user.email=F\u00FCr diese E-Mail existiert bereits ein Konto
+[inactive]user.email=F\u00FCr diese E-Mail existiert bereits ein Konto, das jedoch gesperrt ist. Wenden Sie sich f\u00FCr Unterst\u00FCtzung an den Administrator
+[blank]user.firstName=Erforderlich
+[blank]user.fullName=Erforderlich
+[blank]user.lastName=Erforderlich
+[blank]user.middleName=Erforderlich
+[blank]user.mobilePhone=Erforderlich
+[invalid]user.mobilePhone=Ung\u00FCltig
+[blank]user.parentEmail=Erforderlich
+[blank]user.password=Erforderlich
+[doNotMatch]user.password=Passw\u00F6rter stimmen nicht \u00FCberein
+[singleCase]user.password=Passwort muss Gross- und Kleinbuchstaben enthalten
+[onlyAlpha]user.password=Passwort muss ein Interpunktionszeichen enthalten
+[requireNumber]user.password=Passwort muss eine Ziffer enthalten
+[tooShort]user.password=Passwort entspricht nicht der Mindestl\u00E4nge
+[tooLong]user.password=Passwort \u00FCberschreitet die maximale L\u00E4nge
+[blank]user.username=Erforderlich
+[duplicate]user.username=F\u00FCr diesen Benutzernamen existiert bereits ein Konto
+[inactive]user.username=F\u00FCr diesen Benutzernamen existiert bereits ein Konto, das jedoch gesperrt ist. Wenden Sie sich f\u00FCr Unterst\u00FCtzung an den Administrator
+[mismatch]email=The requested email does not match where the code was sent
+[mismatch]mobilePhone=The requested phone number does not match where the code was sent
+[moderationRejected]registration.username=That username is not allowed. Please select a new one
+[moderationRejected]user.username=Dieser Benutzername ist nicht erlaubt. Bitte w\u00E4hlen Sie einen neuen aus
+
+#
+# Breached password messages
+#
+# - ExactMatch        The password and email or username combination was found in a breached data set.
+# - SubAddressMatch   The password and email or username, or email sub-address was found in a breached data set.
+# - PasswordOnly      The password was found in a breached data set.
+# - CommonPassword    The password is one of the most commonly known breached passwords.
+#
+[breachedExactMatch]password=Dieses Passwort wurde in der Liste der anf\u00E4lligen Passw\u00F6rter gefunden und ist nicht mehr sicher. W\u00E4hlen Sie ein anderes Passwort.
+[breachedExactMatch]user.password=Dieses Passwort wurde in der Liste der anf\u00E4lligen Passw\u00F6rter gefunden und ist nicht mehr sicher. W\u00E4hlen Sie ein anderes Passwort.
+[breachedSubAddressMatch]password=Dieses Passwort wurde in der Liste der anf\u00E4lligen Passw\u00F6rter gefunden und ist nicht mehr sicher. W\u00E4hlen Sie ein anderes Passwort.
+[breachedSubAddressMatch]user.password=Dieses Passwort wurde in der Liste der anf\u00E4lligen Passw\u00F6rter gefunden und ist nicht mehr sicher. W\u00E4hlen Sie ein anderes Passwort.
+[breachedPasswordOnly]password=Dieses Passwort wurde in der Liste der anf\u00E4lligen Passw\u00F6rter gefunden und ist nicht mehr sicher. W\u00E4hlen Sie ein anderes Passwort.
+[breachedPasswordOnly]user.password=Dieses Passwort wurde in der Liste der anf\u00E4lligen Passw\u00F6rter gefunden und ist nicht mehr sicher. W\u00E4hlen Sie ein anderes Passwort.
+[breachedCommonPassword]password=Dieses Passwort ist ein allgemein bekanntes anf\u00E4lliges Passwort. W\u00E4hlen Sie ein sichereres Passwort.
+[breachedCommonPassword]user.password=Dieses Passwort ist ein allgemein bekanntes anf\u00E4lliges Passwort. W\u00E4hlen Sie ein sichereres Passwort.
+
+#
+# Error messages displayed at the top of the page. These are always inside square brackets. These are hard-coded in the FusionAuth code and
+# the keys cannot be changed. You can still change the values though.
+#
+[APIError]=Ein unerwarteter Fehler ist aufgetreten.
+[AdditionalFieldsRequired]=Es sind zus\u00E4tzliche Felder erforderlich, um Ihre Registrierung abzuschliessen.
+[EmailVerificationEmailUpdated]=Your email address has been updated and another email is on the way.
+[EmailVerificationSent]=A verification email is on the way.
+[EmailVerificationDisabled]=Die E-Mail-Best\u00E4tigungsfunktion ist derzeit deaktiviert. Wenden Sie sich f\u00FCr Unterst\u00FCtzung an Ihren FusionAuth Administrator.
+[ErrorException]=Ein unerwarteter Fehler ist aufgetreten.
+[ForgotPasswordDisabled]=Der "Passwort vergessen"-Vorgang ist nicht aktiviert. Bitte wenden Sie sich f\u00FCr Unterst\u00FCtzung an Ihren Systemadministrator.
+[IdentityProviderDoesNotSupportRedirect]=This identity provider does not support this redirect workflow.
+[InvalidChangePasswordId]=Ihr Passwort-R\u00FCcksetzcode ist abgelaufen oder ung\u00FCltig.
+[InvalidEmail]=FusionAuth konnte keinen Benutzer mit dieser E-Mail-Adresse finden.
+[InvalidIdentityProviderId]=Ung\u00FCltige Anfrage. Die Identit\u00E4tsanbieter-Anmeldung kann nicht bearbeitet werden. Bitte wenden Sie sich f\u00FCr Unterst\u00FCtzung an Ihren Systemadministrator.
+[InvalidLogin]=Login leider nicht erfolgreich. Vertippt oder Passwort vergessen?
+[InvalidPasswordlessLoginId]=Ihr Link ist abgelaufen oder ung\u00FCltig. Bitte wiederholen Sie Ihre Anfrage.
+[InvalidVerificationId]=Entschuldigung. Ihr Best\u00E4tigunglink ist aus Sicherheitsgr\u00FCnden leider abgelaufen. Sie m\u00FCssen m\u00F6glicherweise eine weitere Best\u00E4tigung anfordern, die gesendet werden soll.
+[InvalidPendingIdPLinkId]=Your link has expired or is invalid. Please retry your login request.
+[LinkCountExceeded]=You have reached the configured link limit of %d for this identity provider.
+[LoginPreventedException]=Ihr Konto wurde gesperrt. Bitte wenden Sie sich an Ihren Systemadministrator.
+[LoginPreventedExceptionTooManyTwoFactorAttempts]=You have exceeded the number of allowed attempts. Your account has been locked.
+[MissingApplicationId]=Eine applicationId ist erforderlich und fehlt in der Anfrage.
+[MissingChangePasswordId]=Eine changePasswordId ist erforderlich und fehlt in der Anfrage.
+[MissingEmail]=Ihre E-Mail-Adresse ist erforderlich und fehlt in der Anfrage.
+[MissingEmailAddressException]=Sie m\u00FCssen eine E-Mail-Adresse besitzen, um Passwortloses Anmelden nutzen zu k\u00F6nnen.
+[MissingPendingIdPLinkId]=You must first log into a 3rd party identity provider to complete an account link.
+[MissingPKCECodeVerifier]=The code_verifier could not be determined, this request likely did not originate from FusionAuth. Unable to complete this login request.
+[MissingVerificationId]=Bitte prüfen Sie auch Ihren SPAM-Ordner, falls Sie in den nächsten Minuten keine Bestätigung erhalten haben!
+[NotFoundException]=Die angefragte OAuth-Konfiguration ist ung\u00FCltig.
+[OAuthv1TokenMismatch]=Ung\u00FCltige Anfrage. Das Token, das auf dem OAuth v1 Callback bereitgestellt wurde, entsprach nicht demjenigen, das w\u00E4hrend der Autorisierung gesendet wurde. Die Identit\u00E4tsanbieter-Anmeldung kann nicht bearbeitet werden. Bitte wenden Sie sich f\u00FCr Unterst\u00FCtzung an Ihren Systemadministrator oder Support.
+[Oauthv2Error]=Es ist eine ung\u00FCltige Anfrage an den Authorize Endpunkt erfolgt. %s
+[PasswordlessRequestSent]=Eine E-Mail ist unterwegs.
+[PasswordChangeRequired]=Sie m\u00FCssen Ihr Passwort \u00E4ndern, um fortzufahren.
+[PasswordChangeReasonExpired]=Ihr Passwort ist abgelaufen und muss ge\u00E4ndert werden.
+[PasswordChangeReasonBreached]=Ihr Passwort wurde in der Liste der anf\u00E4lligen Passw\u00F6rter gefunden und muss ge\u00E4ndert werden.
+[PasswordChangeReasonValidation]=Ihr Passwort entspricht nicht den Regeln zur Passwort\u00FCberpr\u00FCfung und muss ge\u00E4ndert werden.
+[PasswordlessDisabled]=Passwortloses Anmelden ist derzeit nicht konfiguriert.
+[PushTwoFactorFailed]=Fehler beim Senden eines Best\u00E4tigungscodes \u00FCber den konfigurierten Push-Dienst.
+[RegistrationVerificationSent]=A verification email is on the way.
+[SSOSessionDeletedOrExpired]=Sie wurden abgemeldet..
+[TenantIdRequired]=FusionAuth kann nicht bestimmen, welcher Mandant f\u00FCr diese Anfrage verwendet werden soll. Bitte f\u00FCgen Sie die tenantId als URL-Anfrageparameter hinzu.
+[TwoFactorTimeout]=Sie haben die Zwei-Faktoren-Challenge nicht rechtzeitig abgeschlossen. Bitte melden Sie sich erneut an.
+[UserAuthorizedNotRegisteredException]=Your account has not been registered for this application.
+[UserExpiredException]=Ihr Konto ist abgelaufen. Bitte wenden Sie sich an Ihren Systemadministrator.
+[UserLockedException]= Bitte aktivieren Sie Ihr SWK-Login Konto. Dazu klicken Sie auf den Link der Bestätigungsmail mit dem Betreff “SWK-Login Registrierung bestätigen“. Andernfalls wird Ihr Konto in wenigen Tagen gesperrt und ggf. sogar gelöscht.
+[UserUnauthenticated]=Hoppla. Es scheint, dass Sie aus Versehen hier gelandet sind. Bitte kehren Sie zu Ihrer Applikation zur\u00FCck und melden sich an, um die Autorisierungssequenz zu starten.
+[ExternalAuthenticationExpired]=Ihre externe Authentifizierungsanfrage ist abgelaufen, bitte versuchen Sie die Authentifizierung erneut.
+
+# External authentication errors
+# - Some of these errors are development time issues. But it is possible they could be shown to an end user depending upon your configuration.
+[ExternalAuthenticationException]AppleIdToken=Das von Apple zur\u00FCckgegebene id_token ist ung\u00FCltig oder kann nicht \u00FCberpr\u00FCft werden. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]AppleTokenEndpoint=Eine Anfrage an die Apple Token API ist fehlgeschlagen. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]AppleUserObject=Fehler beim Lesen der von Apple bereitgestellten Benutzerdetails. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]EpicGamesAccount=A request to the Epic Games Account API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]EpicGamesToken=A request to the Epic Games Token API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]FacebookMe=Eine Anfrage an die Facebook Me API ist fehlgeschlagen. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]FacebookMePicture=Eine Anfrage an die Facebook Picture API ist fehlgeschlagen. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]FacebookAccessToken=Eine Anfrage an die Facebook Access Token Info API ist fehlgeschlagen. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]GoogleToken=A request to the Google Token API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]GoogleTokenInfo=Eine Anfrage an die Google Token Info API ist fehlgeschlagen. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]InvalidApplication=Die angeforderte Anwendung existiert nicht oder ist derzeit deaktiviert. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]InvalidIdentityProviderId=Die angeforderte identityProviderId ist ung\u00FCltig. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]LinkedInEmail=A request to the LinkedIn Email API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]LinkedInMe=A request to the LinkedIn Me API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]LinkedInToken=A request to the LinkedIn Token API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]MissingEmail=F\u00FCr den Benutzer wurde keine E-Mail-Adresse angegeben. Dieses Konto kann nicht zum Anmelden verwendet werden. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]MissingUniqueId=A unique identifier was not provided for the user. This account cannot be used to login, unable to complete this login request.
+[ExternalAuthenticationException]MissingUser=Eine Authentifizierungsanfrage kann nicht abgeschlossen werden, da der Benutzer, der die Anfrage gestartet hat, nicht mehr vorhanden ist. Dieses Konto kann nicht zum Anmelden verwendet werden. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]MissingUsername=A username was not returned by the identity provider. This account cannot be used login, unable to complete this login request.
+[ExternalAuthenticationException]NintendoToken=A request to the Nintendo Token API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]OpenIDConnectToken=Eine Anfrage an die OpenID Connect Token API ist fehlgeschlagen. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]OpenIDConnectUserinfo=Eine Anfrage an die OpenID Connect Userinfo API ist fehlgeschlagen. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]SAMLIdPInitiatedIssuerVerificationFailed=The SAML issuer failed validation. Unable to complete this login request.
+[ExternalAuthenticationException]SAMLIdPInitiatedResponseSolicited=The SAML AuthNResponse contained an InResponseTo attribute. In an IdP Initiated Login this is un-expected.
+[ExternalAuthenticationException]SAMLResponse=Das SAML AuthnResponse-Objekt konnte nicht analysiert oder \u00FCberpr\u00FCft werden. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]SAMLResponseAudienceNotBeforeVerificationFailed=Die SAML-Zielgruppe ist noch nicht verf\u00FCgbar, um best\u00E4tigt zu werden. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]SAMLResponseAudienceNotOnOrAfterVerificationFailed=Die SAML-Zielgruppe kann nicht mehr best\u00E4tigt werden. Diese Anfrage kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]SAMLResponseAudienceVerificationFailed=Die SAML-Zielgruppe hat die Validierung nicht bestanden. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]SAMLResponseDestinationVerificationFailed=Die Validierung des SAML-Ziels ist fehlgeschlagen. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]SAMLResponseStatus=Der SAML AuthnResponse-Status zeigt an, dass die Anfrage fehlgeschlagen ist. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]SAMLResponseSubjectNoOnOrAfterVerificationFailed=Das SAML-Thema kann nicht mehr best\u00E4tigt werden. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]SAMLResponseSubjectNotBeforeVerificationFailed=Das SAML-Thema kann noch nicht best\u00E4tigt werden. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]SAMLResponseUnexpectedOrReplayed=Die SAML-Antwort wurde nicht angefordert oder ist bereits verarbeitet worden. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]SAMLResponseUnsolicited=Die SAML-Antwort wurde nicht angefordert. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]SonyPSNToken=A request to the Sony PlayStation Network Token API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]SonyPSNUserInfo=A request to the Sony PlayStation Network User Info API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]SteamPlayerSummary=A request to the Steam Player summary API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]SteamToken=A request to the Steam Token API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]TwitchToken=A request to the Twitch Token API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]TwitchUserInfo=A request to the Twitch User Info API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]TwitterAccessToken=Eine Anfrage an die Twitter Access Token API ist fehlgeschlagen. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]TwitterCallbackUnconfirmed=Die Twitter Callback URL wurde nicht best\u00E4tigt. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]TwitterRequestToken=Eine Anfrage an die Twitter Request Token API ist fehlgeschlagen. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]TwitterVerifyCredentials=Eine Anfrage an die Twitter Verify Credentials API ist fehlgeschlagen. Dieser Anmeldevorgang kann nicht abgeschlossen werden.
+[ExternalAuthenticationException]UserDoesNotExistByEmail=You must first create a user with the same email address in order to complete this login request.
+[ExternalAuthenticationException]UserDoesNotExistByUsername=You must first create a user with the same username in order to complete this login request.
+[ExternalAuthenticationException]XboxSecurityTokenService=A request to the Xbox Security Token Service API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]XboxToken=A request to the Xbox Token API has failed. Unable to complete this login request.
+[ExternalAuthenticationException]XboxUserInfo=A request to the Xbox User Info API has failed. Unable to complete this login request.
+
+# OAuth token endpoint and callback errors
+[TokenExchangeFailed]=Beim Abschluss Ihres Anmeldeversuchs ist ein unerwarteter Fehler aufgetreten. Bitte versuchen Sie die Anfrage erneut.
+[TokenExchangeException]=Wir konnten Ihren Anmeldeversuch nicht abschliessen. Bitte versuchen Sie die Anfrage erneut.
+
+# Webhook transaction failure
+[WebhookTransactionException]=Einer oder mehrere Webhooks haben eine ung\u00FCltige Antwort zur\u00FCckgegeben oder waren nicht erreichbar. Aufgrund Ihrer Transaktionskonfiguration kann Ihre Aktion nicht abgeschlossen werden.
+
+# Self Service
+[SelfServiceFormNotConfigured]=Configuration is incomplete. The FusionAuth administrator must configure a form for this application.
+[SelfServiceUserNotRegisteredException]=You are not registered for this application. Not all features will be available.
+[TwoFactorAuthenticationMethodDisabled]=Two-factor authentication has been disabled
+[TwoFactorAuthenticationMethodEnabled]=Two-factor authentication has been enabled
+[TwoFactorSendFailed]=A request to send a one-time code for two-factor configuration code has failed.
+[TwoFactorMessageSent]=A one-time use code was sent
+
+# General messages
+[UserWillBeLoggedIn]=Sie werden eingeloggt, nachdem Sie diese Eingabe abgeschlossen haben.
+[SuccessfullyLoggedOut]=Benutzer wurde erfolgreich abgemeldet
