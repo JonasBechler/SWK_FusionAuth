@@ -13,7 +13,12 @@ services:
     networks:
       - db_net
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - type: bind
+        source: ./db_data
+        target: /var/lib/postgresql/data
+
+
+#      - db_data:/var/lib/postgresql/data
 
   fusionauth:
     image: fusionauth/fusionauth-app:latest
@@ -35,13 +40,16 @@ services:
     ports:
       - 9011:9011
     volumes:
-      - fusionauth_config:/usr/local/fusionauth/config
+      - type: bind
+        source: ./fusionauth_config
+        target: /usr/local/fusionauth/config
+
+#      - fusionauth_config:/usr/local/fusionauth/config
 
 networks:
   db_net:
     driver: bridge
 
 
-volumes:
-  db_data:
-  fusionauth_config:
+#volumes:
+#  fusionauth_config:
