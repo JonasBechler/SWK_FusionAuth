@@ -3,22 +3,19 @@ version: '3'
 
 services:
   db:
-    image: postgres:12.9
+    image: postgres:latest
     restart: unless-stopped
     environment:
       PGDATA: /var/lib/postgresql/data/pgdata
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: mydb
 
     networks:
       - db_net
+
     volumes:
-      - type: bind
-        source: ./db_data
-        target: /var/lib/postgresql/data
-
-
-#      - db_data:/var/lib/postgresql/data
+      - ./db_data:/var/lib/postgresql/data/pgdata
 
   fusionauth:
     image: fusionauth/fusionauth-app:latest
@@ -40,16 +37,14 @@ services:
     ports:
       - 9011:9011
     volumes:
-      - type: bind
-        source: ./fusionauth_config
-        target: /usr/local/fusionauth/config
-
-#      - fusionauth_config:/usr/local/fusionauth/config
+      - fusionauth_config:/usr/local/fusionauth/config
 
 networks:
   db_net:
     driver: bridge
 
 
-#volumes:
-#  fusionauth_config:
+volumes:
+  #db_data:
+  fusionauth_config:
+
