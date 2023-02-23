@@ -1752,22 +1752,8 @@ COPY public.application_daily_active_users (applications_id, count, day) FROM st
 3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	19374
 3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	19369
 3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	19364
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	19396
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	19396
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	19393
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	19393
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	19400
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	19395
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	19390
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	19395
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	19391
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	2	19391
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	19401
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	19401
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	19392
 3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	19376
 3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	19378
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	19394
 \.
 
 
@@ -1777,8 +1763,6 @@ c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	19394
 
 COPY public.application_monthly_active_users (applications_id, count, month) FROM stdin;
 3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	636
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	637
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	2	637
 \.
 
 
@@ -1788,9 +1772,6 @@ c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	2	637
 
 COPY public.application_registration_counts (applications_id, count, decremented_count, hour) FROM stdin;
 3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	0	464750
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	0	465400
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	0	465401
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	0	1	465641
 \.
 
 
@@ -1845,7 +1826,7 @@ COPY public.application_roles (id, applications_id, description, insert_instant,
 
 COPY public.applications (id, access_token_populate_lambdas_id, access_token_signing_keys_id, active, admin_registration_forms_id, data, email_update_email_templates_id, email_verification_email_templates_id, email_verified_email_templates_id, forgot_password_email_templates_id, forms_id, id_token_populate_lambdas_id, id_token_signing_keys_id, insert_instant, last_update_instant, login_id_in_use_on_create_email_templates_id, login_id_in_use_on_update_email_templates_id, login_new_device_email_templates_id, login_suspicious_email_templates_id, multi_factor_email_message_templates_id, multi_factor_sms_message_templates_id, name, passwordless_email_templates_id, password_update_email_templates_id, password_reset_success_email_templates_id, samlv2_default_verification_keys_id, samlv2_issuer, samlv2_keys_id, samlv2_logout_keys_id, samlv2_logout_default_verification_keys_id, samlv2_populate_lambdas_id, samlv2_single_logout_keys_id, self_service_user_forms_id, set_password_email_templates_id, tenants_id, themes_id, two_factor_method_add_email_templates_id, two_factor_method_remove_email_templates_id, ui_ip_access_control_lists_id, verification_email_templates_id) FROM stdin;
 3c219e58-ed0e-4b18-ad48-f4f92793ae32	\N	4fd4467c-c21e-4386-4647-974f82117db6	t	b9f5b964-5bff-a70c-4268-162514cfc34d	{"accessControlConfiguration":{},"authenticationTokenConfiguration":{"enabled":false},"data":{},"externalIdentifierConfiguration":{},"formConfiguration":{"adminRegistrationFormId":"b9f5b964-5bff-a70c-4268-162514cfc34d"},"jwtConfiguration":{"enabled":true,"refreshTokenExpirationPolicy":"SlidingWindow","refreshTokenTimeToLiveInMinutes":60,"refreshTokenUsagePolicy":"OneTimeUse","timeToLiveInSeconds":60},"loginConfiguration":{"allowTokenRefresh":false,"generateRefreshTokens":false,"requireAuthentication":true},"multiFactorConfiguration":{"email":{},"sms":{}},"oauthConfiguration":{"authorizedRedirectURLs":["/admin/login"],"clientAuthenticationPolicy":"Required","clientId":"3c219e58-ed0e-4b18-ad48-f4f92793ae32","clientSecret":"ZWU1OTdjMzlhODE3MThmNjViM2RhN2M1YzM3YThmMzFmNTIyYmNhMTg4MDY2OTJlZWNjODAzMTM5ZWFhMTlmNQ==","debug":false,"enabledGrants":["authorization_code","refresh_token"],"generateRefreshTokens":true,"logoutBehavior":"AllApplications","logoutURL":"/admin/single-logout","proofKeyForCodeExchangePolicy":"Required","requireClientAuthentication":true,"requireRegistration":false},"passwordlessConfiguration":{"enabled":false},"registrationConfiguration":{"birthDate":{"enabled":false,"required":false},"confirmPassword":false,"enabled":false,"firstName":{"enabled":false,"required":false},"fullName":{"enabled":false,"required":false},"lastName":{"enabled":false,"required":false},"loginIdType":"email","middleName":{"enabled":false,"required":false},"mobilePhone":{"enabled":false,"required":false},"type":"basic"},"registrationDeletePolicy":{"unverified":{"enabled":false,"numberOfDaysToRetain":120}},"samlv2Configuration":{"debug":false,"enabled":false,"initiatedLogin":{"enabled":false,"nameIdFormat":"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"},"logout":{"behavior":"AllParticipants","requireSignedRequests":false,"singleLogout":{"enabled":false,"xmlSignatureC14nMethod":"exclusive_with_comments"},"xmlSignatureC14nMethod":"exclusive_with_comments"},"requireSignedRequests":false,"xmlSignatureC14nMethod":"exclusive_with_comments","xmlSignatureLocation":"Assertion"},"state":"Active","unverified":{"behavior":"Allow"},"verifyRegistration":false,"webAuthnConfiguration":{"bootstrapWorkflow":{"enabled":false},"enabled":false,"reauthenticationWorkflow":{"enabled":false}}}	\N	\N	\N	\N	\N	\N	092dbedc-30af-4149-9c61-b578f2c72f59	1673099749827	1673114042126	\N	\N	\N	\N	\N	\N	FusionAuth	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	\N	\N	\N	\N
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	\N	4fd4467c-c21e-4386-4647-974f82117db6	t	b9f5b964-5bff-a70c-4268-162514cfc34d	{"accessControlConfiguration":{},"authenticationTokenConfiguration":{"enabled":false},"data":{},"externalIdentifierConfiguration":{},"formConfiguration":{"adminRegistrationFormId":"b9f5b964-5bff-a70c-4268-162514cfc34d"},"jwtConfiguration":{"enabled":true,"refreshTokenExpirationPolicy":"Fixed","refreshTokenTimeToLiveInMinutes":43200,"refreshTokenUsagePolicy":"Reusable","timeToLiveInSeconds":3600},"loginConfiguration":{"allowTokenRefresh":true,"generateRefreshTokens":false,"requireAuthentication":false},"multiFactorConfiguration":{"email":{},"sms":{}},"oauthConfiguration":{"authorizedRedirectURLs":["http://localhost:50010/kn/login_callback","http://192.168.178.100:50010/kn/login_callback"],"clientAuthenticationPolicy":"Required","clientId":"c4f0cc44-d3cc-4b76-a68f-91e2df829cd9","clientSecret":"UrX0bTh75KeT0f7KhaUeuJiNwfo2kowtV7k3wqFjxBE","debug":false,"enabledGrants":["refresh_token","authorization_code"],"generateRefreshTokens":true,"logoutBehavior":"AllApplications","logoutURL":"http://192.168.178.100:50010/","proofKeyForCodeExchangePolicy":"NotRequired","requireClientAuthentication":true,"requireRegistration":false},"passwordlessConfiguration":{"enabled":false},"registrationConfiguration":{"birthDate":{"enabled":false,"required":false},"confirmPassword":true,"enabled":true,"firstName":{"enabled":false,"required":false},"fullName":{"enabled":false,"required":false},"lastName":{"enabled":false,"required":false},"loginIdType":"email","middleName":{"enabled":false,"required":false},"mobilePhone":{"enabled":false,"required":false},"type":"basic"},"registrationDeletePolicy":{"unverified":{"enabled":false,"numberOfDaysToRetain":120}},"samlv2Configuration":{"debug":false,"enabled":false,"initiatedLogin":{"enabled":false,"nameIdFormat":"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"},"logout":{"behavior":"AllParticipants","requireSignedRequests":false,"singleLogout":{"enabled":false,"xmlSignatureC14nMethod":"exclusive_with_comments"},"xmlSignatureC14nMethod":"exclusive_with_comments"},"requireSignedRequests":false,"xmlSignatureC14nMethod":"exclusive_with_comments","xmlSignatureLocation":"Assertion"},"state":"Active","unverified":{"behavior":"Allow"},"verificationStrategy":"ClickableLink","verifyRegistration":false,"webAuthnConfiguration":{"bootstrapWorkflow":{"enabled":false},"enabled":false,"reauthenticationWorkflow":{"enabled":false}}}	\N	\N	\N	\N	\N	\N	092dbedc-30af-4149-9c61-b578f2c72f59	1673100390834	1675440566338	\N	\N	\N	\N	\N	\N	KonstanzLogin	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	\N	\N	\N	\N
+c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	\N	4fd4467c-c21e-4386-4647-974f82117db6	t	b9f5b964-5bff-a70c-4268-162514cfc34d	{"accessControlConfiguration":{},"authenticationTokenConfiguration":{"enabled":false},"data":{},"externalIdentifierConfiguration":{},"formConfiguration":{"adminRegistrationFormId":"b9f5b964-5bff-a70c-4268-162514cfc34d"},"jwtConfiguration":{"enabled":true,"refreshTokenExpirationPolicy":"Fixed","refreshTokenTimeToLiveInMinutes":43200,"refreshTokenUsagePolicy":"Reusable","timeToLiveInSeconds":3600},"loginConfiguration":{"allowTokenRefresh":true,"generateRefreshTokens":false,"requireAuthentication":false},"multiFactorConfiguration":{"email":{},"sms":{}},"oauthConfiguration":{"authorizedRedirectURLs":["http://localhost:50010/kn/login_callback","http://192.168.178.100:50010/kn/login_callback"],"clientAuthenticationPolicy":"Required","clientId":"c4f0cc44-d3cc-4b76-a68f-91e2df829cd9","clientSecret":"UrX0bTh75KeT0f7KhaUeuJiNwfo2kowtV7k3wqFjxBE","debug":false,"enabledGrants":["authorization_code","refresh_token"],"generateRefreshTokens":true,"logoutBehavior":"AllApplications","logoutURL":"http://192.168.178.100:50010/","proofKeyForCodeExchangePolicy":"NotRequired","requireClientAuthentication":true,"requireRegistration":false},"passwordlessConfiguration":{"enabled":false},"registrationConfiguration":{"birthDate":{"enabled":false,"required":false},"confirmPassword":false,"enabled":false,"firstName":{"enabled":false,"required":false},"fullName":{"enabled":false,"required":false},"lastName":{"enabled":false,"required":false},"loginIdType":"email","middleName":{"enabled":false,"required":false},"mobilePhone":{"enabled":false,"required":false},"type":"basic"},"registrationDeletePolicy":{"unverified":{"enabled":false,"numberOfDaysToRetain":120}},"samlv2Configuration":{"debug":false,"enabled":false,"initiatedLogin":{"enabled":false,"nameIdFormat":"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"},"logout":{"behavior":"AllParticipants","requireSignedRequests":false,"singleLogout":{"enabled":false,"xmlSignatureC14nMethod":"exclusive_with_comments"},"xmlSignatureC14nMethod":"exclusive_with_comments"},"requireSignedRequests":false,"xmlSignatureC14nMethod":"exclusive_with_comments","xmlSignatureLocation":"Assertion"},"state":"Active","unverified":{"behavior":"Allow"},"verificationStrategy":"ClickableLink","verifyRegistration":false,"webAuthnConfiguration":{"bootstrapWorkflow":{"enabled":false},"enabled":false,"reauthenticationWorkflow":{"enabled":false}}}	\N	\N	\N	\N	\N	\N	092dbedc-30af-4149-9c61-b578f2c72f59	1673100390834	1674335705650	\N	\N	\N	\N	\N	\N	KonstanzLogin	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	\N	\N	\N	\N
 a7e50e16-6d0e-43ee-a87e-bcfb870129c2	\N	4fd4467c-c21e-4386-4647-974f82117db6	t	b9f5b964-5bff-a70c-4268-162514cfc34d	{"accessControlConfiguration":{},"authenticationTokenConfiguration":{"enabled":false},"data":{},"externalIdentifierConfiguration":{},"formConfiguration":{"adminRegistrationFormId":"b9f5b964-5bff-a70c-4268-162514cfc34d"},"jwtConfiguration":{"enabled":true,"refreshTokenExpirationPolicy":"Fixed","refreshTokenTimeToLiveInMinutes":43200,"refreshTokenUsagePolicy":"Reusable","timeToLiveInSeconds":3600},"loginConfiguration":{"allowTokenRefresh":false,"generateRefreshTokens":false,"requireAuthentication":false},"multiFactorConfiguration":{"email":{},"sms":{}},"oauthConfiguration":{"authorizedRedirectURLs":["http://localhost:50030/kn/login_callback","http://192.168.178.100:50030/kn/login_callback"],"clientAuthenticationPolicy":"Required","clientId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","clientSecret":"FOp4-5ZusvxOORJLnsznJoc8lUC0EY8YyP3RzqC-MtM","debug":false,"enabledGrants":["authorization_code","refresh_token"],"generateRefreshTokens":true,"logoutBehavior":"AllApplications","logoutURL":"http://192.168.178.100:50030","proofKeyForCodeExchangePolicy":"NotRequired","requireClientAuthentication":true,"requireRegistration":false},"passwordlessConfiguration":{"enabled":false},"registrationConfiguration":{"birthDate":{"enabled":false,"required":false},"confirmPassword":false,"enabled":false,"firstName":{"enabled":false,"required":false},"fullName":{"enabled":false,"required":false},"lastName":{"enabled":false,"required":false},"loginIdType":"email","middleName":{"enabled":false,"required":false},"mobilePhone":{"enabled":false,"required":false},"type":"basic"},"registrationDeletePolicy":{"unverified":{"enabled":false,"numberOfDaysToRetain":120}},"samlv2Configuration":{"debug":false,"enabled":false,"initiatedLogin":{"enabled":false,"nameIdFormat":"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"},"logout":{"behavior":"AllParticipants","requireSignedRequests":false,"singleLogout":{"enabled":false,"xmlSignatureC14nMethod":"exclusive_with_comments"},"xmlSignatureC14nMethod":"exclusive_with_comments"},"requireSignedRequests":false,"xmlSignatureC14nMethod":"exclusive_with_comments","xmlSignatureLocation":"Assertion"},"state":"Active","unverified":{"behavior":"Allow"},"verificationStrategy":"ClickableLink","verifyRegistration":false,"webAuthnConfiguration":{"bootstrapWorkflow":{"enabled":false},"enabled":false,"reauthenticationWorkflow":{"enabled":false}}}	\N	\N	\N	\N	\N	\N	092dbedc-30af-4149-9c61-b578f2c72f59	1673100396832	1674335697757	\N	\N	\N	\N	\N	\N	Handyticket	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	\N	\N	\N	\N
 aeddeb0d-41ce-484d-b8b3-f250b65a4ce6	\N	4fd4467c-c21e-4386-4647-974f82117db6	t	b9f5b964-5bff-a70c-4268-162514cfc34d	{"accessControlConfiguration":{},"authenticationTokenConfiguration":{"enabled":true},"data":{},"externalIdentifierConfiguration":{},"formConfiguration":{"adminRegistrationFormId":"b9f5b964-5bff-a70c-4268-162514cfc34d"},"jwtConfiguration":{"enabled":true,"refreshTokenExpirationPolicy":"Fixed","refreshTokenTimeToLiveInMinutes":43200,"refreshTokenUsagePolicy":"Reusable","timeToLiveInSeconds":3600},"loginConfiguration":{"allowTokenRefresh":true,"generateRefreshTokens":false,"requireAuthentication":false},"multiFactorConfiguration":{"email":{},"sms":{}},"oauthConfiguration":{"authorizedRedirectURLs":["http://localhost:50020/kn/login_callback","http://192.168.178.100:50020/kn/login_callback"],"clientAuthenticationPolicy":"Required","clientId":"aeddeb0d-41ce-484d-b8b3-f250b65a4ce6","clientSecret":"SKX96KaMMcsAd0dV_hSMUSQlZmOmP7uBzBMQu3qTP1A","debug":false,"enabledGrants":["authorization_code","refresh_token"],"generateRefreshTokens":true,"logoutBehavior":"AllApplications","logoutURL":"http://192.168.178.100:50020","proofKeyForCodeExchangePolicy":"NotRequired","requireClientAuthentication":true,"requireRegistration":false},"passwordlessConfiguration":{"enabled":false},"registrationConfiguration":{"birthDate":{"enabled":false,"required":false},"confirmPassword":false,"enabled":false,"firstName":{"enabled":false,"required":false},"fullName":{"enabled":false,"required":false},"lastName":{"enabled":false,"required":false},"loginIdType":"email","middleName":{"enabled":false,"required":false},"mobilePhone":{"enabled":false,"required":false},"type":"basic"},"registrationDeletePolicy":{"unverified":{"enabled":false,"numberOfDaysToRetain":120}},"samlv2Configuration":{"debug":false,"enabled":false,"initiatedLogin":{"enabled":false,"nameIdFormat":"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"},"logout":{"behavior":"AllParticipants","requireSignedRequests":false,"singleLogout":{"enabled":false,"xmlSignatureC14nMethod":"exclusive_with_comments"},"xmlSignatureC14nMethod":"exclusive_with_comments"},"requireSignedRequests":false,"xmlSignatureC14nMethod":"exclusive_with_comments","xmlSignatureLocation":"Assertion"},"state":"Active","unverified":{"behavior":"Allow"},"verificationStrategy":"ClickableLink","verifyRegistration":false,"webAuthnConfiguration":{"bootstrapWorkflow":{"enabled":false},"enabled":false,"reauthenticationWorkflow":{"enabled":false}}}	\N	\N	\N	\N	\N	\N	092dbedc-30af-4149-9c61-b578f2c72f59	1673100385934	1674335764322	\N	\N	\N	\N	\N	\N	Konrad	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	\N	\N	\N	\N
 \.
@@ -1915,10 +1896,6 @@ COPY public.audit_logs (id, insert_instant, insert_user, message, data) FROM std
 49	1674335697770	admin@admin.de	Updated the application with Id [a7e50e16-6d0e-43ee-a87e-bcfb870129c2] and name [Handyticket]	{"data":{},"newValue":{"accessControlConfiguration":{},"active":true,"authenticationTokenConfiguration":{"enabled":false},"data":{},"emailConfiguration":{},"externalIdentifierConfiguration":{},"formConfiguration":{"adminRegistrationFormId":"b9f5b964-5bff-a70c-4268-162514cfc34d"},"id":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","insertInstant":1673100396832,"jwtConfiguration":{"accessTokenKeyId":"4fd4467c-c21e-4386-4647-974f82117db6","enabled":true,"idTokenKeyId":"092dbedc-30af-4149-9c61-b578f2c72f59","refreshTokenExpirationPolicy":"Fixed","refreshTokenTimeToLiveInMinutes":43200,"refreshTokenUsagePolicy":"Reusable","timeToLiveInSeconds":3600},"lambdaConfiguration":{},"lastUpdateInstant":1674335697757,"loginConfiguration":{"allowTokenRefresh":false,"generateRefreshTokens":false,"requireAuthentication":false},"multiFactorConfiguration":{"email":{},"sms":{}},"name":"Handyticket","oauthConfiguration":{"authorizedOriginURLs":[],"authorizedRedirectURLs":["http://localhost:50030/kn/login_callback","http://192.168.178.100:50030/kn/login_callback"],"clientAuthenticationPolicy":"Required","clientId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","clientSecret":"FOp4-5ZusvxOORJLnsznJoc8lUC0EY8YyP3RzqC-MtM","debug":false,"enabledGrants":["authorization_code","refresh_token"],"generateRefreshTokens":true,"logoutBehavior":"AllApplications","logoutURL":"http://192.168.178.100:50030","proofKeyForCodeExchangePolicy":"NotRequired","requireClientAuthentication":true,"requireRegistration":false},"passwordlessConfiguration":{"enabled":false},"registrationConfiguration":{"birthDate":{"enabled":false,"required":false},"confirmPassword":false,"enabled":false,"firstName":{"enabled":false,"required":false},"fullName":{"enabled":false,"required":false},"lastName":{"enabled":false,"required":false},"loginIdType":"email","middleName":{"enabled":false,"required":false},"mobilePhone":{"enabled":false,"required":false},"type":"basic"},"registrationDeletePolicy":{"unverified":{"enabled":false,"numberOfDaysToRetain":120}},"roles":[],"samlv2Configuration":{"authorizedRedirectURLs":[],"debug":false,"enabled":false,"initiatedLogin":{"enabled":false,"nameIdFormat":"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"},"logout":{"behavior":"AllParticipants","requireSignedRequests":false,"singleLogout":{"enabled":false,"xmlSignatureC14nMethod":"exclusive_with_comments"},"xmlSignatureC14nMethod":"exclusive_with_comments"},"requireSignedRequests":false,"xmlSignatureC14nMethod":"exclusive_with_comments","xmlSignatureLocation":"Assertion"},"state":"Active","tenantId":"fcd64b92-594a-a9dc-90fc-14eb73764404","unverified":{"behavior":"Allow"},"verificationStrategy":"ClickableLink","verifyRegistration":false,"webAuthnConfiguration":{"bootstrapWorkflow":{"enabled":false},"enabled":false,"reauthenticationWorkflow":{"enabled":false}}},"oldValue":{"accessControlConfiguration":{},"active":true,"authenticationTokenConfiguration":{"enabled":false},"data":{},"emailConfiguration":{},"externalIdentifierConfiguration":{},"formConfiguration":{"adminRegistrationFormId":"b9f5b964-5bff-a70c-4268-162514cfc34d"},"id":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","insertInstant":1673100396832,"jwtConfiguration":{"accessTokenKeyId":"4fd4467c-c21e-4386-4647-974f82117db6","enabled":true,"idTokenKeyId":"092dbedc-30af-4149-9c61-b578f2c72f59","refreshTokenExpirationPolicy":"Fixed","refreshTokenTimeToLiveInMinutes":43200,"refreshTokenUsagePolicy":"Reusable","timeToLiveInSeconds":3600},"lambdaConfiguration":{},"lastUpdateInstant":1674335572267,"loginConfiguration":{"allowTokenRefresh":false,"generateRefreshTokens":false,"requireAuthentication":false},"multiFactorConfiguration":{"email":{},"sms":{}},"name":"Handyticket","oauthConfiguration":{"authorizedOriginURLs":[],"authorizedRedirectURLs":["http://localhost:50030/kn/login_callback","http://192.168.178.100:50030"],"clientAuthenticationPolicy":"Required","clientId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","clientSecret":"FOp4-5ZusvxOORJLnsznJoc8lUC0EY8YyP3RzqC-MtM","debug":false,"enabledGrants":["authorization_code","refresh_token"],"generateRefreshTokens":true,"logoutBehavior":"AllApplications","logoutURL":"http://192.168.178.100:50030","proofKeyForCodeExchangePolicy":"NotRequired","requireClientAuthentication":true,"requireRegistration":false},"passwordlessConfiguration":{"enabled":false},"registrationConfiguration":{"birthDate":{"enabled":false,"required":false},"confirmPassword":false,"enabled":false,"firstName":{"enabled":false,"required":false},"fullName":{"enabled":false,"required":false},"lastName":{"enabled":false,"required":false},"loginIdType":"email","middleName":{"enabled":false,"required":false},"mobilePhone":{"enabled":false,"required":false},"type":"basic"},"registrationDeletePolicy":{"unverified":{"enabled":false,"numberOfDaysToRetain":120}},"roles":[],"samlv2Configuration":{"authorizedRedirectURLs":[],"debug":false,"enabled":false,"initiatedLogin":{"enabled":false,"nameIdFormat":"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"},"logout":{"behavior":"AllParticipants","requireSignedRequests":false,"singleLogout":{"enabled":false,"xmlSignatureC14nMethod":"exclusive_with_comments"},"xmlSignatureC14nMethod":"exclusive_with_comments"},"requireSignedRequests":false,"xmlSignatureC14nMethod":"exclusive_with_comments","xmlSignatureLocation":"Assertion"},"state":"Active","tenantId":"fcd64b92-594a-a9dc-90fc-14eb73764404","unverified":{"behavior":"Allow"},"verificationStrategy":"ClickableLink","verifyRegistration":false,"webAuthnConfiguration":{"bootstrapWorkflow":{"enabled":false},"enabled":false,"reauthenticationWorkflow":{"enabled":false}}},"reason":"FusionAuth User Interface"}
 50	1674335705660	admin@admin.de	Updated the application with Id [c4f0cc44-d3cc-4b76-a68f-91e2df829cd9] and name [KonstanzLogin]	{"data":{},"newValue":{"accessControlConfiguration":{},"active":true,"authenticationTokenConfiguration":{"enabled":false},"data":{},"emailConfiguration":{},"externalIdentifierConfiguration":{},"formConfiguration":{"adminRegistrationFormId":"b9f5b964-5bff-a70c-4268-162514cfc34d"},"id":"c4f0cc44-d3cc-4b76-a68f-91e2df829cd9","insertInstant":1673100390834,"jwtConfiguration":{"accessTokenKeyId":"4fd4467c-c21e-4386-4647-974f82117db6","enabled":true,"idTokenKeyId":"092dbedc-30af-4149-9c61-b578f2c72f59","refreshTokenExpirationPolicy":"Fixed","refreshTokenTimeToLiveInMinutes":43200,"refreshTokenUsagePolicy":"Reusable","timeToLiveInSeconds":3600},"lambdaConfiguration":{},"lastUpdateInstant":1674335705650,"loginConfiguration":{"allowTokenRefresh":true,"generateRefreshTokens":false,"requireAuthentication":false},"multiFactorConfiguration":{"email":{},"sms":{}},"name":"KonstanzLogin","oauthConfiguration":{"authorizedOriginURLs":[],"authorizedRedirectURLs":["http://localhost:50010/kn/login_callback","http://192.168.178.100:50010/kn/login_callback"],"clientAuthenticationPolicy":"Required","clientId":"c4f0cc44-d3cc-4b76-a68f-91e2df829cd9","clientSecret":"UrX0bTh75KeT0f7KhaUeuJiNwfo2kowtV7k3wqFjxBE","debug":false,"enabledGrants":["authorization_code","refresh_token"],"generateRefreshTokens":true,"logoutBehavior":"AllApplications","logoutURL":"http://192.168.178.100:50010/","proofKeyForCodeExchangePolicy":"NotRequired","requireClientAuthentication":true,"requireRegistration":false},"passwordlessConfiguration":{"enabled":false},"registrationConfiguration":{"birthDate":{"enabled":false,"required":false},"confirmPassword":false,"enabled":false,"firstName":{"enabled":false,"required":false},"fullName":{"enabled":false,"required":false},"lastName":{"enabled":false,"required":false},"loginIdType":"email","middleName":{"enabled":false,"required":false},"mobilePhone":{"enabled":false,"required":false},"type":"basic"},"registrationDeletePolicy":{"unverified":{"enabled":false,"numberOfDaysToRetain":120}},"roles":[],"samlv2Configuration":{"authorizedRedirectURLs":[],"debug":false,"enabled":false,"initiatedLogin":{"enabled":false,"nameIdFormat":"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"},"logout":{"behavior":"AllParticipants","requireSignedRequests":false,"singleLogout":{"enabled":false,"xmlSignatureC14nMethod":"exclusive_with_comments"},"xmlSignatureC14nMethod":"exclusive_with_comments"},"requireSignedRequests":false,"xmlSignatureC14nMethod":"exclusive_with_comments","xmlSignatureLocation":"Assertion"},"state":"Active","tenantId":"fcd64b92-594a-a9dc-90fc-14eb73764404","unverified":{"behavior":"Allow"},"verificationStrategy":"ClickableLink","verifyRegistration":false,"webAuthnConfiguration":{"bootstrapWorkflow":{"enabled":false},"enabled":false,"reauthenticationWorkflow":{"enabled":false}}},"oldValue":{"accessControlConfiguration":{},"active":true,"authenticationTokenConfiguration":{"enabled":false},"data":{},"emailConfiguration":{},"externalIdentifierConfiguration":{},"formConfiguration":{"adminRegistrationFormId":"b9f5b964-5bff-a70c-4268-162514cfc34d"},"id":"c4f0cc44-d3cc-4b76-a68f-91e2df829cd9","insertInstant":1673100390834,"jwtConfiguration":{"accessTokenKeyId":"4fd4467c-c21e-4386-4647-974f82117db6","enabled":true,"idTokenKeyId":"092dbedc-30af-4149-9c61-b578f2c72f59","refreshTokenExpirationPolicy":"Fixed","refreshTokenTimeToLiveInMinutes":43200,"refreshTokenUsagePolicy":"Reusable","timeToLiveInSeconds":3600},"lambdaConfiguration":{},"lastUpdateInstant":1674335644423,"loginConfiguration":{"allowTokenRefresh":true,"generateRefreshTokens":false,"requireAuthentication":false},"multiFactorConfiguration":{"email":{},"sms":{}},"name":"KonstanzLogin","oauthConfiguration":{"authorizedOriginURLs":[],"authorizedRedirectURLs":["http://localhost:50010/kn/login_callback","http://192.168.178.100:50010/kn/login_callback"],"clientAuthenticationPolicy":"Required","clientId":"c4f0cc44-d3cc-4b76-a68f-91e2df829cd9","clientSecret":"UrX0bTh75KeT0f7KhaUeuJiNwfo2kowtV7k3wqFjxBE","debug":false,"enabledGrants":["authorization_code","refresh_token"],"generateRefreshTokens":true,"logoutBehavior":"AllApplications","logoutURL":"http://192.168.178.100:50010/","proofKeyForCodeExchangePolicy":"NotRequired","requireClientAuthentication":true,"requireRegistration":false},"passwordlessConfiguration":{"enabled":false},"registrationConfiguration":{"birthDate":{"enabled":false,"required":false},"confirmPassword":false,"enabled":false,"firstName":{"enabled":false,"required":false},"fullName":{"enabled":false,"required":false},"lastName":{"enabled":false,"required":false},"loginIdType":"email","middleName":{"enabled":false,"required":false},"mobilePhone":{"enabled":false,"required":false},"type":"basic"},"registrationDeletePolicy":{"unverified":{"enabled":false,"numberOfDaysToRetain":120}},"roles":[],"samlv2Configuration":{"authorizedRedirectURLs":[],"debug":false,"enabled":false,"initiatedLogin":{"enabled":false,"nameIdFormat":"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"},"logout":{"behavior":"AllParticipants","requireSignedRequests":false,"singleLogout":{"enabled":false,"xmlSignatureC14nMethod":"exclusive_with_comments"},"xmlSignatureC14nMethod":"exclusive_with_comments"},"requireSignedRequests":false,"xmlSignatureC14nMethod":"exclusive_with_comments","xmlSignatureLocation":"Assertion"},"state":"Active","tenantId":"fcd64b92-594a-a9dc-90fc-14eb73764404","unverified":{"behavior":"Allow"},"verificationStrategy":"ClickableLink","verifyRegistration":false,"webAuthnConfiguration":{"bootstrapWorkflow":{"enabled":false},"enabled":false,"reauthenticationWorkflow":{"enabled":false}}},"reason":"FusionAuth User Interface"}
 51	1674335764333	admin@admin.de	Updated the application with Id [aeddeb0d-41ce-484d-b8b3-f250b65a4ce6] and name [Konrad]	{"data":{},"newValue":{"accessControlConfiguration":{},"active":true,"authenticationTokenConfiguration":{"enabled":true},"data":{},"emailConfiguration":{},"externalIdentifierConfiguration":{},"formConfiguration":{"adminRegistrationFormId":"b9f5b964-5bff-a70c-4268-162514cfc34d"},"id":"aeddeb0d-41ce-484d-b8b3-f250b65a4ce6","insertInstant":1673100385934,"jwtConfiguration":{"accessTokenKeyId":"4fd4467c-c21e-4386-4647-974f82117db6","enabled":true,"idTokenKeyId":"092dbedc-30af-4149-9c61-b578f2c72f59","refreshTokenExpirationPolicy":"Fixed","refreshTokenTimeToLiveInMinutes":43200,"refreshTokenUsagePolicy":"Reusable","timeToLiveInSeconds":3600},"lambdaConfiguration":{},"lastUpdateInstant":1674335764322,"loginConfiguration":{"allowTokenRefresh":true,"generateRefreshTokens":false,"requireAuthentication":false},"multiFactorConfiguration":{"email":{},"sms":{}},"name":"Konrad","oauthConfiguration":{"authorizedOriginURLs":[],"authorizedRedirectURLs":["http://localhost:50020/kn/login_callback","http://192.168.178.100:50020/kn/login_callback"],"clientAuthenticationPolicy":"Required","clientId":"aeddeb0d-41ce-484d-b8b3-f250b65a4ce6","clientSecret":"SKX96KaMMcsAd0dV_hSMUSQlZmOmP7uBzBMQu3qTP1A","debug":false,"enabledGrants":["authorization_code","refresh_token"],"generateRefreshTokens":true,"logoutBehavior":"AllApplications","logoutURL":"http://192.168.178.100:50020","proofKeyForCodeExchangePolicy":"NotRequired","requireClientAuthentication":true,"requireRegistration":false},"passwordlessConfiguration":{"enabled":false},"registrationConfiguration":{"birthDate":{"enabled":false,"required":false},"confirmPassword":false,"enabled":false,"firstName":{"enabled":false,"required":false},"fullName":{"enabled":false,"required":false},"lastName":{"enabled":false,"required":false},"loginIdType":"email","middleName":{"enabled":false,"required":false},"mobilePhone":{"enabled":false,"required":false},"type":"basic"},"registrationDeletePolicy":{"unverified":{"enabled":false,"numberOfDaysToRetain":120}},"roles":[],"samlv2Configuration":{"authorizedRedirectURLs":[],"debug":false,"enabled":false,"initiatedLogin":{"enabled":false,"nameIdFormat":"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"},"logout":{"behavior":"AllParticipants","requireSignedRequests":false,"singleLogout":{"enabled":false,"xmlSignatureC14nMethod":"exclusive_with_comments"},"xmlSignatureC14nMethod":"exclusive_with_comments"},"requireSignedRequests":false,"xmlSignatureC14nMethod":"exclusive_with_comments","xmlSignatureLocation":"Assertion"},"state":"Active","tenantId":"fcd64b92-594a-a9dc-90fc-14eb73764404","unverified":{"behavior":"Allow"},"verificationStrategy":"ClickableLink","verifyRegistration":false,"webAuthnConfiguration":{"bootstrapWorkflow":{"enabled":false},"enabled":false,"reauthenticationWorkflow":{"enabled":false}}},"oldValue":{"accessControlConfiguration":{},"active":true,"authenticationTokenConfiguration":{"enabled":true},"data":{},"emailConfiguration":{},"externalIdentifierConfiguration":{},"formConfiguration":{"adminRegistrationFormId":"b9f5b964-5bff-a70c-4268-162514cfc34d"},"id":"aeddeb0d-41ce-484d-b8b3-f250b65a4ce6","insertInstant":1673100385934,"jwtConfiguration":{"accessTokenKeyId":"4fd4467c-c21e-4386-4647-974f82117db6","enabled":true,"idTokenKeyId":"092dbedc-30af-4149-9c61-b578f2c72f59","refreshTokenExpirationPolicy":"Fixed","refreshTokenTimeToLiveInMinutes":43200,"refreshTokenUsagePolicy":"Reusable","timeToLiveInSeconds":3600},"lambdaConfiguration":{},"lastUpdateInstant":1673860857467,"loginConfiguration":{"allowTokenRefresh":true,"generateRefreshTokens":false,"requireAuthentication":false},"multiFactorConfiguration":{"email":{},"sms":{}},"name":"Konrad","oauthConfiguration":{"authorizedOriginURLs":[],"authorizedRedirectURLs":["http://localhost:50020/kn/login_callback"],"clientAuthenticationPolicy":"Required","clientId":"aeddeb0d-41ce-484d-b8b3-f250b65a4ce6","clientSecret":"SKX96KaMMcsAd0dV_hSMUSQlZmOmP7uBzBMQu3qTP1A","debug":false,"enabledGrants":["authorization_code","refresh_token"],"generateRefreshTokens":true,"logoutBehavior":"AllApplications","logoutURL":"http://localhost:50020/","proofKeyForCodeExchangePolicy":"NotRequired","requireClientAuthentication":true,"requireRegistration":false},"passwordlessConfiguration":{"enabled":false},"registrationConfiguration":{"birthDate":{"enabled":false,"required":false},"confirmPassword":false,"enabled":false,"firstName":{"enabled":false,"required":false},"fullName":{"enabled":false,"required":false},"lastName":{"enabled":false,"required":false},"loginIdType":"email","middleName":{"enabled":false,"required":false},"mobilePhone":{"enabled":false,"required":false},"type":"basic"},"registrationDeletePolicy":{"unverified":{"enabled":false,"numberOfDaysToRetain":120}},"roles":[],"samlv2Configuration":{"authorizedRedirectURLs":[],"debug":false,"enabled":false,"initiatedLogin":{"enabled":false,"nameIdFormat":"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"},"logout":{"behavior":"AllParticipants","requireSignedRequests":false,"singleLogout":{"enabled":false,"xmlSignatureC14nMethod":"exclusive_with_comments"},"xmlSignatureC14nMethod":"exclusive_with_comments"},"requireSignedRequests":false,"xmlSignatureC14nMethod":"exclusive_with_comments","xmlSignatureLocation":"Assertion"},"state":"Active","tenantId":"fcd64b92-594a-a9dc-90fc-14eb73764404","unverified":{"behavior":"Allow"},"verificationStrategy":"ClickableLink","verifyRegistration":false,"webAuthnConfiguration":{"bootstrapWorkflow":{"enabled":false},"enabled":false,"reauthenticationWorkflow":{"enabled":false}}},"reason":"FusionAuth User Interface"}
-52	1675440566430	admin@admin.de	Updated the application with Id [c4f0cc44-d3cc-4b76-a68f-91e2df829cd9] and name [KonstanzLogin]	{"data":{},"newValue":{"accessControlConfiguration":{},"active":true,"authenticationTokenConfiguration":{"enabled":false},"data":{},"emailConfiguration":{},"externalIdentifierConfiguration":{},"formConfiguration":{"adminRegistrationFormId":"b9f5b964-5bff-a70c-4268-162514cfc34d"},"id":"c4f0cc44-d3cc-4b76-a68f-91e2df829cd9","insertInstant":1673100390834,"jwtConfiguration":{"accessTokenKeyId":"4fd4467c-c21e-4386-4647-974f82117db6","enabled":true,"idTokenKeyId":"092dbedc-30af-4149-9c61-b578f2c72f59","refreshTokenExpirationPolicy":"Fixed","refreshTokenTimeToLiveInMinutes":43200,"refreshTokenUsagePolicy":"Reusable","timeToLiveInSeconds":3600},"lambdaConfiguration":{},"lastUpdateInstant":1675440566338,"loginConfiguration":{"allowTokenRefresh":true,"generateRefreshTokens":false,"requireAuthentication":false},"multiFactorConfiguration":{"email":{},"sms":{}},"name":"KonstanzLogin","oauthConfiguration":{"authorizedOriginURLs":[],"authorizedRedirectURLs":["http://localhost:50010/kn/login_callback","http://192.168.178.100:50010/kn/login_callback"],"clientAuthenticationPolicy":"Required","clientId":"c4f0cc44-d3cc-4b76-a68f-91e2df829cd9","clientSecret":"UrX0bTh75KeT0f7KhaUeuJiNwfo2kowtV7k3wqFjxBE","debug":false,"enabledGrants":["refresh_token","authorization_code"],"generateRefreshTokens":true,"logoutBehavior":"AllApplications","logoutURL":"http://192.168.178.100:50010/","proofKeyForCodeExchangePolicy":"NotRequired","requireClientAuthentication":true,"requireRegistration":false},"passwordlessConfiguration":{"enabled":false},"registrationConfiguration":{"birthDate":{"enabled":false,"required":false},"confirmPassword":true,"enabled":true,"firstName":{"enabled":false,"required":false},"fullName":{"enabled":false,"required":false},"lastName":{"enabled":false,"required":false},"loginIdType":"email","middleName":{"enabled":false,"required":false},"mobilePhone":{"enabled":false,"required":false},"type":"basic"},"registrationDeletePolicy":{"unverified":{"enabled":false,"numberOfDaysToRetain":120}},"roles":[],"samlv2Configuration":{"authorizedRedirectURLs":[],"debug":false,"enabled":false,"initiatedLogin":{"enabled":false,"nameIdFormat":"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"},"logout":{"behavior":"AllParticipants","requireSignedRequests":false,"singleLogout":{"enabled":false,"xmlSignatureC14nMethod":"exclusive_with_comments"},"xmlSignatureC14nMethod":"exclusive_with_comments"},"requireSignedRequests":false,"xmlSignatureC14nMethod":"exclusive_with_comments","xmlSignatureLocation":"Assertion"},"state":"Active","tenantId":"fcd64b92-594a-a9dc-90fc-14eb73764404","unverified":{"behavior":"Allow"},"verificationStrategy":"ClickableLink","verifyRegistration":false,"webAuthnConfiguration":{"bootstrapWorkflow":{"enabled":false},"enabled":false,"reauthenticationWorkflow":{"enabled":false}}},"oldValue":{"accessControlConfiguration":{},"active":true,"authenticationTokenConfiguration":{"enabled":false},"data":{},"emailConfiguration":{},"externalIdentifierConfiguration":{},"formConfiguration":{"adminRegistrationFormId":"b9f5b964-5bff-a70c-4268-162514cfc34d"},"id":"c4f0cc44-d3cc-4b76-a68f-91e2df829cd9","insertInstant":1673100390834,"jwtConfiguration":{"accessTokenKeyId":"4fd4467c-c21e-4386-4647-974f82117db6","enabled":true,"idTokenKeyId":"092dbedc-30af-4149-9c61-b578f2c72f59","refreshTokenExpirationPolicy":"Fixed","refreshTokenTimeToLiveInMinutes":43200,"refreshTokenUsagePolicy":"Reusable","timeToLiveInSeconds":3600},"lambdaConfiguration":{},"lastUpdateInstant":1674335705650,"loginConfiguration":{"allowTokenRefresh":true,"generateRefreshTokens":false,"requireAuthentication":false},"multiFactorConfiguration":{"email":{},"sms":{}},"name":"KonstanzLogin","oauthConfiguration":{"authorizedOriginURLs":[],"authorizedRedirectURLs":["http://localhost:50010/kn/login_callback","http://192.168.178.100:50010/kn/login_callback"],"clientAuthenticationPolicy":"Required","clientId":"c4f0cc44-d3cc-4b76-a68f-91e2df829cd9","clientSecret":"UrX0bTh75KeT0f7KhaUeuJiNwfo2kowtV7k3wqFjxBE","debug":false,"enabledGrants":["refresh_token","authorization_code"],"generateRefreshTokens":true,"logoutBehavior":"AllApplications","logoutURL":"http://192.168.178.100:50010/","proofKeyForCodeExchangePolicy":"NotRequired","requireClientAuthentication":true,"requireRegistration":false},"passwordlessConfiguration":{"enabled":false},"registrationConfiguration":{"birthDate":{"enabled":false,"required":false},"confirmPassword":false,"enabled":false,"firstName":{"enabled":false,"required":false},"fullName":{"enabled":false,"required":false},"lastName":{"enabled":false,"required":false},"loginIdType":"email","middleName":{"enabled":false,"required":false},"mobilePhone":{"enabled":false,"required":false},"type":"basic"},"registrationDeletePolicy":{"unverified":{"enabled":false,"numberOfDaysToRetain":120}},"roles":[],"samlv2Configuration":{"authorizedRedirectURLs":[],"debug":false,"enabled":false,"initiatedLogin":{"enabled":false,"nameIdFormat":"urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"},"logout":{"behavior":"AllParticipants","requireSignedRequests":false,"singleLogout":{"enabled":false,"xmlSignatureC14nMethod":"exclusive_with_comments"},"xmlSignatureC14nMethod":"exclusive_with_comments"},"requireSignedRequests":false,"xmlSignatureC14nMethod":"exclusive_with_comments","xmlSignatureLocation":"Assertion"},"state":"Active","tenantId":"fcd64b92-594a-a9dc-90fc-14eb73764404","unverified":{"behavior":"Allow"},"verificationStrategy":"ClickableLink","verifyRegistration":false,"webAuthnConfiguration":{"bootstrapWorkflow":{"enabled":false},"enabled":false,"reauthenticationWorkflow":{"enabled":false}}},"reason":"FusionAuth User Interface"}
-53	1675845636964	admin@admin.de	Created the API key with Id [7cc2624a-16a4-4d3b-814e-54cdd244bcca] and a key ending [*GesGd74].	{"data":{},"reason":"FusionAuth User Interface"}
-54	1675845837615	admin@admin.de	Updated the API key with Id [7cc2624a-16a4-4d3b-814e-54cdd244bcca] and key ending in [*GesGd74]	{"data":{},"newValue":{"id":"7cc2624a-16a4-4d3b-814e-54cdd244bcca","insertInstant":1675845636895,"key":"*GesGd74","keyManager":false,"lastUpdateInstant":1675845837556,"metaData":{"attributes":{}},"permissions":{"endpoints":{"/api/user":["DELETE","POST","GET","PUT","PATCH"],"/api/user/search":["DELETE","POST","GET","PUT","PATCH"]}}},"oldValue":{"id":"7cc2624a-16a4-4d3b-814e-54cdd244bcca","insertInstant":1675845636895,"key":"*GesGd74","keyManager":false,"lastUpdateInstant":1675845636895,"metaData":{"attributes":{}}},"reason":"FusionAuth User Interface"}
-55	1676310700199	admin@admin.de	Deleted user with Id [8523551b-440a-424a-8397-6712b1d4dd6d]	{"data":{},"reason":"FusionAuth User Interface"}
 \.
 
 
@@ -1928,7 +1905,6 @@ COPY public.audit_logs (id, insert_instant, insert_user, message, data) FROM std
 
 COPY public.authentication_keys (id, insert_instant, ip_access_control_lists_id, last_update_instant, key_manager, key_value, permissions, meta_data, tenants_id) FROM stdin;
 e4df0a29-8609-6236-5c07-67547d0578c8	1673099749827	\N	1673099749827	f	__internal_NDBhMDIyNGZhZjExYTg0Y2U3YTcxZjk0YWUxMDI5YjQ2YTU4Mjk4ZDU4NmQyMWI1ZmM0YTgzMDYxNjhhYzAwZg==	{"endpoints": {"/api/cache/reload": ["POST"], "/api/system/log/export": ["POST"]}}	{"attributes": {"description": "Internal Use Only. [DistributedCacheNotifier][DistributedLogDownloader]", "internalCacheReloader": "true", "internalLogDownloader": "true"}}	\N
-7cc2624a-16a4-4d3b-814e-54cdd244bcca	1675845636895	\N	1675845837556	f	JkMNs3UQ5wJ0SXAHzaUeyNlDi0P5HxBU1YZ1XWBW9-9NOc-XrGesGd74	{"endpoints":{"/api/user":["DELETE","POST","GET","PUT","PATCH"],"/api/user/search":["DELETE","POST","GET","PUT","PATCH"]}}	{}	\N
 \.
 
 
@@ -2094,7 +2070,6 @@ COPY public.entity_user_grants (id, data, entities_id, insert_instant, last_upda
 
 COPY public.event_logs (id, insert_instant, message, type) FROM stdin;
 1	1673100192846	Async Email Send exception occurred.\n\nTemplate Id: aed386fb-e90a-44d8-a99f-53b8bd25d844\nTemplate Name: [FusionAuth Default] Setup Password\nTenant Id: fcd64b92-594a-a9dc-90fc-14eb73764404\nAddressed to: Max Muster <maxmuster@web.de>\n\nCause:\ncom.sun.mail.util.MailConnectException : Message: Couldn't connect to host, port: localhost, 25; timeout -1	2
-2	1675408831413	An exception occurred while managing an async task.\n\nException:\norg.apache.ibatis.exceptions.PersistenceException: \n### Error querying database.  Cause: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 3007ms.\n### The error may exist in io/fusionauth/api/domain/LockMapper.java (best guess)\n### The error may involve io.fusionauth.api.domain.LockMapper.lock\n### The error occurred while executing a query\n### Cause: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 3007ms.\n\tat org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)\n\tat org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:153)\n\tat org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)\n\tat org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)\n\tat org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)\n\tat jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\n\tat org.apache.ibatis.session.SqlSessionManager$SqlSessionInterceptor.invoke(SqlSessionManager.java:350)\n\tat jdk.proxy2/jdk.proxy2.$Proxy52.selectOne(Unknown Source)\n\tat org.apache.ibatis.session.SqlSessionManager.selectOne(SqlSessionManager.java:166)\n\tat org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)\n\tat org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)\n\tat org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)\n\tat jdk.proxy2/jdk.proxy2.$Proxy61.lock(Unknown Source)\n\tat io.fusionauth.api.service.lock.DefaultLockService.acquireLock(DefaultLockService.java:29)\n\tat io.fusionauth.api.service.system.DefaultAsyncTaskManager._doRun(DefaultAsyncTaskManager.java:83)\n\tat org.mybatis.guice.transactional.TransactionalMethodInterceptor.invoke(TransactionalMethodInterceptor.java:100)\n\tat org.mybatis.guice.transactional.TransactionalMethodInterceptor.invoke(TransactionalMethodInterceptor.java:100)\n\tat org.mybatis.guice.transactional.TransactionalMethodInterceptor.invoke(TransactionalMethodInterceptor.java:100)\n\tat org.mybatis.guice.transactional.TransactionalMethodInterceptor.invoke(TransactionalMethodInterceptor.java:100)\n\tat io.fusionauth.api.service.system.DefaultAsyncTaskManager.run(DefaultAsyncTaskManager.java:168)\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)\n\tat java.base/java.lang.Thread.run(Thread.java:833)\nCaused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 3007ms.\n\tat com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)\n\tat com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)\n\tat com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)\n\tat com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:100)\n\tat org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:139)\n\tat org.apache.ibatis.transaction.jdbc.JdbcTransaction.getConnection(JdbcTransaction.java:61)\n\tat org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)\n\tat org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)\n\tat org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)\n\tat org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)\n\tat org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)\n\tat org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)\n\tat org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)\n\tat org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)\n\t... 26 more\nCaused by: org.postgresql.util.PSQLException: This connection has been closed.\n\tat org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:907)\n\tat org.postgresql.jdbc.PgConnection.setNetworkTimeout(PgConnection.java:1649)\n\tat com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)\n\tat com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)\n\tat com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)\n\t... 38 more\n	2
 \.
 
 
@@ -2103,6 +2078,15 @@ COPY public.event_logs (id, insert_instant, message, type) FROM stdin;
 --
 
 COPY public.external_identifiers (id, applications_id, data, expiration_instant, insert_instant, tenants_id, type, users_id) FROM stdin;
+CU-TfZtRSsRjpnXssMwcqcnL7ZZIk_w28sQOHZRxP1I	\N	{"attributes":{"applicationId":"aeddeb0d-41ce-484d-b8b3-f250b65a4ce6","authenticationType":"PASSWORD","clientId":"aeddeb0d-41ce-484d-b8b3-f250b65a4ce6","codeChallenge":"AZsEHV2ZAAzA6gbZUM3cHhk8r-zri3xGEtNBDygmNck","metaData.device.lastAccessedAddress":"192.168.160.1","metaData.device.name":"macOS Chrome","metaData.device.type":"BROWSER","redirectURI":"http://192.168.178.100:50020/kn/login_callback","sid":"b739ec54-4375-46df-a1b9-97d929b545a3"},"device":{"type":"UNKNOWN"}}	\N	1674342504277	fcd64b92-594a-a9dc-90fc-14eb73764404	4	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
+PG-1KgGX-PbCMH3nE2Sh73c1wjghY5d5lcXRtoMr2Ko	\N	{"attributes":{"applicationId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","authenticationType":"PING","clientId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","codeChallenge":"DMWT0QileY4Pwg8KUGVUpUKoizdQN5HClG-W98AgHQY","metaData.device.lastAccessedAddress":"192.168.160.1","metaData.device.type":"UNKNOWN","redirectURI":"http://192.168.178.100:50030/kn/login_callback","sid":"b739ec54-4375-46df-a1b9-97d929b545a3"},"device":{"type":"UNKNOWN"}}	\N	1674342610644	fcd64b92-594a-a9dc-90fc-14eb73764404	4	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
+EvEQcpSQOCgE3p8dznvqBU0FwelM3TVn5d6yGPlLeRE	\N	{"attributes":{"applicationId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","authenticationType":"PING","clientId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","codeChallenge":"DMWT0QileY4Pwg8KUGVUpUKoizdQN5HClG-W98AgHQY","metaData.device.lastAccessedAddress":"192.168.160.1","metaData.device.type":"UNKNOWN","redirectURI":"http://192.168.178.100:50030/kn/login_callback","sid":"b739ec54-4375-46df-a1b9-97d929b545a3"},"device":{"type":"UNKNOWN"}}	\N	1674342619705	fcd64b92-594a-a9dc-90fc-14eb73764404	4	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
+OlZLDi7r0x1hlNuKQKZdwz62X6mNCxoPC7RTeFu7-3o	\N	{"attributes":{"applicationId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","authenticationType":"PING","clientId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","codeChallenge":"kmkQZh6kqNcliS_54JbyTImE9JP7DG1FxVC3uuMNIBk","metaData.device.lastAccessedAddress":"192.168.160.1","metaData.device.type":"UNKNOWN","redirectURI":"http://192.168.178.100:50030/kn/login_callback","sid":"b739ec54-4375-46df-a1b9-97d929b545a3"},"device":{"type":"UNKNOWN"}}	\N	1674342634045	fcd64b92-594a-a9dc-90fc-14eb73764404	4	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
+cXalSgFazQT-NPceyncd9IP8cEWyn6Vb0ft2aD-DedQ	\N	{"attributes":{"applicationId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","authenticationType":"PING","clientId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","codeChallenge":"g7PhZ1HNDaOSBiCl20AaStK7BBbEMqM4DQdiBKiY47U","metaData.device.lastAccessedAddress":"192.168.160.1","metaData.device.type":"UNKNOWN","redirectURI":"http://192.168.178.100:50030/kn/login_callback","sid":"b739ec54-4375-46df-a1b9-97d929b545a3"},"device":{"type":"UNKNOWN"}}	\N	1674342638468	fcd64b92-594a-a9dc-90fc-14eb73764404	4	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
+7Oka0FJi5tfxRX5n7gFr4HFiS8NO6-UkFeSZCmEH7yc	\N	{"attributes":{"applicationId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","authenticationType":"PING","clientId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","codeChallenge":"8J4NfxlzwCTLxIXeqCFHf-j4h8mily_8xGvqqE2_UaU","metaData.device.lastAccessedAddress":"192.168.160.1","metaData.device.type":"UNKNOWN","redirectURI":"http://192.168.178.100:50030/kn/login_callback","sid":"b739ec54-4375-46df-a1b9-97d929b545a3"},"device":{"type":"UNKNOWN"}}	\N	1674342655238	fcd64b92-594a-a9dc-90fc-14eb73764404	4	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
+M0d4dhXmrl-ZfoSNIYfUKdv3nlGEGUoyt5Af7PO9JRo	\N	{"attributes":{"applicationId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","authenticationType":"PING","clientId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","codeChallenge":"PDA0PJfGcv5hDHWd5X8LG3wHZCAnNsEMBM7qoyeeHoQ","metaData.device.lastAccessedAddress":"192.168.160.1","metaData.device.type":"UNKNOWN","redirectURI":"http://192.168.178.100:50030/kn/login_callback","sid":"b739ec54-4375-46df-a1b9-97d929b545a3"},"device":{"type":"UNKNOWN"}}	\N	1674342802861	fcd64b92-594a-a9dc-90fc-14eb73764404	4	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
+tZRbkmsOc19EzvMouz96Pa9074sulyMNJxNaT_-_dS4	\N	{"attributes":{"applicationId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","authenticationType":"PING","clientId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","codeChallenge":"n2MrmGJzJr82DaCEApCAnofEHg0hOxNoRcEQZtYbZ4E","metaData.device.lastAccessedAddress":"192.168.160.1","metaData.device.type":"UNKNOWN","redirectURI":"http://192.168.178.100:50030/kn/login_callback","sid":"b739ec54-4375-46df-a1b9-97d929b545a3"},"device":{"type":"UNKNOWN"}}	\N	1674342844024	fcd64b92-594a-a9dc-90fc-14eb73764404	4	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
+tJ-yZOK9cIU5blU4P46BQ_JPJVuVmKwW9YNRqQwIhLk	\N	{"attributes":{"applicationId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","authenticationType":"PING","clientId":"a7e50e16-6d0e-43ee-a87e-bcfb870129c2","codeChallenge":"1wkOKD9cXQjacr60Bxm5Grq47tdkI2eghyoz6NSU4LM","metaData.device.lastAccessedAddress":"192.168.160.1","metaData.device.type":"UNKNOWN","redirectURI":"http://192.168.178.100:50030/kn/login_callback","sid":"b739ec54-4375-46df-a1b9-97d929b545a3"},"device":{"type":"UNKNOWN"}}	\N	1674342845710	fcd64b92-594a-a9dc-90fc-14eb73764404	4	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
 \.
 
 
@@ -2211,20 +2195,8 @@ COPY public.global_daily_active_users (count, day) FROM stdin;
 2	19364
 1	19374
 2	19369
-1	19390
-3	19391
-1	19400
-1	19386
-1	19392
-2	19401
-2	19393
-1	19389
-1	19387
 2	19376
 2	19378
-1	19394
-2	19396
-2	19395
 \.
 
 
@@ -2234,7 +2206,6 @@ COPY public.global_daily_active_users (count, day) FROM stdin;
 
 COPY public.global_monthly_active_users (count, month) FROM stdin;
 2	636
-3	637
 \.
 
 
@@ -2244,8 +2215,6 @@ COPY public.global_monthly_active_users (count, month) FROM stdin;
 
 COPY public.global_registration_counts (count, decremented_count, hour) FROM stdin;
 2	0	464750
-1	0	465401
-0	1	465641
 \.
 
 
@@ -2292,28 +2261,6 @@ COPY public.hourly_logins (applications_id, count, data, hour) FROM stdin;
 3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	\N	465087
 3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	\N	465088
 3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	\N	465093
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	\N	465372
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	\N	465400
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	3	\N	465400
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	7	\N	465401
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	\N	465402
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	\N	465404
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	7	\N	465406
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	\N	465421
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	\N	465426
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	\N	465443
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	\N	465446
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	7	\N	465448
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1	\N	465475
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	\N	465491
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	2	\N	465496
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	\N	465510
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	\N	465511
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	7	\N	465513
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	4	\N	465515
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1	\N	465613
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	3	\N	465641
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	5	\N	465641
 \.
 
 
@@ -2322,8 +2269,8 @@ c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	5	\N	465641
 --
 
 COPY public.identities (id, breached_password_last_checked_instant, breached_password_status, connectors_id, email, encryption_scheme, factor, insert_instant, last_login_instant, last_update_instant, password, password_change_reason, password_change_required, password_last_update_instant, salt, status, tenants_id, username, username_index, username_status, users_id, verified) FROM stdin;
-1	\N	\N	e3306678-a53a-4964-9040-1c96f36dda72	admin@admin.de	salted-pbkdf2-hmac-sha256	24000	1673100039526	1676310099891	1673100039526	Vw5kJyH0KotVKtCM2G4o30eMkp+d9E4vSMAlW2S0FxA=	\N	f	1673100039641	stX0pKJpQFXD/mzsOu5LFLY7L865Kae0OD3/fVIwTqs=	0	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	\N	0	9b3e5004-ee29-4cad-bbab-def0a35181fd	t
-2	\N	\N	e3306678-a53a-4964-9040-1c96f36dda72	maxmuster@web.de	salted-pbkdf2-hmac-sha256	24000	1673100192611	1676310556566	1673109910044	5mjOuOLRsWYTSLz/FG6C08NzrWsovRlojQlig5vlWWw=	\N	f	1673109894487	t71SbP4cC3T2gXY6hlJIkrcjEYRtiOFxH2gJxxNCRxE=	0	fcd64b92-594a-a9dc-90fc-14eb73764404	max_muster	MAX_MUSTER	0	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8	t
+2	\N	\N	e3306678-a53a-4964-9040-1c96f36dda72	maxmuster@web.de	salted-pbkdf2-hmac-sha256	24000	1673100192611	1674344515960	1673109910044	5mjOuOLRsWYTSLz/FG6C08NzrWsovRlojQlig5vlWWw=	\N	f	1673109894487	t71SbP4cC3T2gXY6hlJIkrcjEYRtiOFxH2gJxxNCRxE=	0	fcd64b92-594a-a9dc-90fc-14eb73764404	max_muster	MAX_MUSTER	0	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8	t
+1	\N	\N	e3306678-a53a-4964-9040-1c96f36dda72	admin@admin.de	salted-pbkdf2-hmac-sha256	24000	1673100039526	1674335521200	1673100039526	Vw5kJyH0KotVKtCM2G4o30eMkp+d9E4vSMAlW2S0FxA=	\N	f	1673100039641	stX0pKJpQFXD/mzsOu5LFLY7L865Kae0OD3/fVIwTqs=	0	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	\N	0	9b3e5004-ee29-4cad-bbab-def0a35181fd	t
 \.
 
 
@@ -2461,7 +2408,7 @@ AsyncTaskManager	\N
 --
 
 COPY public.master_record (id, instant) FROM stdin;
-8cc2536e-3935-4612-b843-4cf790927285	1676311464799
+a9db1b31-0c04-474d-85f0-b2baba6465d9	1674344493467
 \.
 
 
@@ -2501,7 +2448,7 @@ io.fusionauth.api.migration.guice.Migration_1_30_0	0
 --
 
 COPY public.nodes (id, data, insert_instant, last_checkin_instant, runtime_mode, url) FROM stdin;
-8cc2536e-3935-4612-b843-4cf790927285	{"data":{},"ipAddresses":{"eth0":["172.18.0.3"]},"platform":{"arch":"amd64","name":"Linux","version":"5.10.124-linuxkit"}}	1676310419445	1676311456819	development	http://fusionauth:9011
+a9db1b31-0c04-474d-85f0-b2baba6465d9	{"data":{},"ipAddresses":{"eth0":["172.18.0.3"]},"platform":{"arch":"amd64","name":"Linux","version":"5.10.124-linuxkit"}}	1674344317123	1674344615373	development	http://fusionauth:9011
 \.
 
 
@@ -2518,8 +2465,7 @@ COPY public.previous_passwords (insert_instant, encryption_scheme, factor, passw
 --
 
 COPY public.raw_application_daily_active_users (applications_id, day, users_id) FROM stdin;
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	19401	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	19401	9b3e5004-ee29-4cad-bbab-def0a35181fd
+3c219e58-ed0e-4b18-ad48-f4f92793ae32	19378	9b3e5004-ee29-4cad-bbab-def0a35181fd
 \.
 
 
@@ -2528,9 +2474,7 @@ c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	19401	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
 --
 
 COPY public.raw_application_monthly_active_users (applications_id, month, users_id) FROM stdin;
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	637	9b3e5004-ee29-4cad-bbab-def0a35181fd
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	637	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	637	8523551b-440a-424a-8397-6712b1d4dd6d
+3c219e58-ed0e-4b18-ad48-f4f92793ae32	636	9b3e5004-ee29-4cad-bbab-def0a35181fd
 \.
 
 
@@ -2547,8 +2491,8 @@ COPY public.raw_application_registration_counts (id, applications_id, count, dec
 --
 
 COPY public.raw_global_daily_active_users (day, users_id) FROM stdin;
-19401	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-19401	9b3e5004-ee29-4cad-bbab-def0a35181fd
+19378	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
+19378	9b3e5004-ee29-4cad-bbab-def0a35181fd
 \.
 
 
@@ -2557,9 +2501,8 @@ COPY public.raw_global_daily_active_users (day, users_id) FROM stdin;
 --
 
 COPY public.raw_global_monthly_active_users (month, users_id) FROM stdin;
-637	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-637	9b3e5004-ee29-4cad-bbab-def0a35181fd
-637	8523551b-440a-424a-8397-6712b1d4dd6d
+636	9b3e5004-ee29-4cad-bbab-def0a35181fd
+636	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
 \.
 
 
@@ -2737,184 +2680,6 @@ COPY public.raw_logins (applications_id, instant, ip_address, users_id) FROM std
 \N	1674344477383	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
 \N	1674344495091	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
 \N	1674344515960	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675031187030	172.21.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675031197338	172.21.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675031376159	172.21.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675087355928	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675243545135	172.22.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675243796127	172.22.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675243800189	172.22.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675243801113	172.22.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675243877779	172.22.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675243956250	172.22.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675244314644	172.22.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675244435001	172.22.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675244445665	172.22.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675282007853	172.19.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675283068194	172.19.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675286450606	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675289064371	172.22.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675289070462	172.22.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675289247055	172.22.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675290609861	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675291652469	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675291662884	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675291667933	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675292388825	172.27.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675292412667	172.27.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1675339357115	172.28.0.1	9b3e5004-ee29-4cad-bbab-def0a35181fd
-\N	1675439135042	192.168.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675439218360	192.168.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675439352609	192.168.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675439382414	192.168.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675439952184	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675440421976	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675440421994	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675440435419	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675440464285	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675440469219	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675440496677	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1675440505579	192.168.16.1	9b3e5004-ee29-4cad-bbab-def0a35181fd
-\N	1675440580382	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675440580466	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675440587069	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675440619927	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675440629647	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675440644774	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675440682569	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675440717714	192.168.16.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675440965124	192.168.48.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675441934493	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675442359221	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675442403144	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675442420452	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675442571779	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675443447473	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675443462398	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675444083794	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675444296842	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675444303550	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675444311793	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675444325035	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675444330186	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675444407407	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675444972768	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675445602507	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675445619769	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675445628093	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675445779777	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675445790677	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675446652625	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675446662215	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675446758216	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675447817577	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675447846985	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675456523747	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675456532312	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675456541935	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675456545525	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675456551069	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675461648150	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675461650545	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675461667396	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675461675355	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675461745372	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675462535271	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675462543696	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675462550492	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675462915784	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675462921127	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675462924409	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675462929252	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675462934908	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675462941909	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675462965865	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675463026544	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675463049611	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675463056581	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675463129525	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675463180528	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675517499862	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675517507567	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675517713496	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675524773338	172.19.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675524814929	172.19.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675524824722	172.19.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675524931659	172.19.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675524931664	172.19.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675524931669	172.19.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675524997498	172.19.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675534381260	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675534414666	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675534439548	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675535974743	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675536192104	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675536839594	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675597120801	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1675606907180	172.20.0.1	9b3e5004-ee29-4cad-bbab-def0a35181fd
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675614778196	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675614887654	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675614894793	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675614901305	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675614918433	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675614930228	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675614935771	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675614943754	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675614972812	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675614976921	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675615003248	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675615036750	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675615042246	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675615046070	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675615050384	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675712938261	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675712955965	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1675769881265	172.20.0.1	9b3e5004-ee29-4cad-bbab-def0a35181fd
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675786403976	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675786477634	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675786484806	172.20.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1675839354121	172.21.0.1	9b3e5004-ee29-4cad-bbab-def0a35181fd
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1675843036550	172.21.0.1	9b3e5004-ee29-4cad-bbab-def0a35181fd
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675849257227	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675849268490	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675849332093	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675849392399	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675849418654	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675849426883	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675849450926	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675850209332	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675850219548	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675850243285	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675850255086	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675850266047	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675850273187	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675854760978	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675854767461	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675854772139	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675854911677	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675854919343	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675854927134	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675854932083	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1675854958692	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675854964160	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675854967730	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675854977869	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1675854994146	172.24.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1676208287933	172.24.0.1	9b3e5004-ee29-4cad-bbab-def0a35181fd
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1676309865978	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1676309866130	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1676309877693	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1676309912762	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1676309988911	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1676310028389	172.18.0.1	9b3e5004-ee29-4cad-bbab-def0a35181fd
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1676310092948	172.18.0.1	9b3e5004-ee29-4cad-bbab-def0a35181fd
-3c219e58-ed0e-4b18-ad48-f4f92793ae32	1676310099891	172.18.0.1	9b3e5004-ee29-4cad-bbab-def0a35181fd
-\N	1676310440378	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1676310470288	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1676310526006	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1676310534566	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-\N	1676310553226	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1676310556566	172.18.0.1	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
 \.
 
 
@@ -2923,9 +2688,12 @@ c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	1676310556566	172.18.0.1	0d8b1119-4f11-40e1
 --
 
 COPY public.refresh_tokens (id, applications_id, data, insert_instant, start_instant, tenants_id, token, token_hash, token_text, users_id) FROM stdin;
-d98376d8-4b42-4408-924b-cb4b4fa8f7e9	\N	{"data":{},"metaData":{"device":{"lastAccessedAddress":"172.18.0.1","lastAccessedInstant":1676309865993,"name":"iPhone/iPod Safari","type":"BROWSER"}}}	1676309865993	1676309865993	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	b0MclMbIpdsfRj23aKhVdI3Kx2p2HWcoP7SFUpfPpkM=                    	Ek9q-tIQZBFxAG44H2TTbLGPbrvziukSOyMYTlF988IcvlZA1d0N9A	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-8fd45348-08e0-4dd2-8beb-3bbe96240a0e	\N	{"data":{},"metaData":{"device":{"lastAccessedAddress":"172.18.0.1","lastAccessedInstant":1676310470272,"name":"iPhone/iPod Safari","type":"BROWSER"}}}	1676309988913	1676310470272	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	vfeoi7dS1P6rG2oU/dXR33YLaQCAdu3ObQ9Hh99mFig=                    	d_5JM-MvQ4paqj2r2HpkZWCBmWY5RCR83u2NzM5OJ-LTighp-pv5Sw	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
-0512eef4-3403-45df-b4ed-d19ccde07e56	\N	{"data":{},"metaData":{"device":{"lastAccessedAddress":"172.18.0.1","lastAccessedInstant":1676310556558,"name":"iPhone/iPod Safari","type":"BROWSER"}}}	1676310526021	1676310556558	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	lrv9wc8XewVDR+etABAvjBs+vO6HsM3GySxQ6YZ/QNk=                    	bwruoBRMr5JPy35-8rZ70xg4m1jo_BVumO4aUWLgjfgrQQFw8FZlbQ	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
+fadb5cad-9693-4fc2-aecb-b57ead022724	\N	{"data":{},"metaData":{"device":{"lastAccessedAddress":"192.168.48.1","lastAccessedInstant":1674335521209,"name":"macOS Chrome","type":"BROWSER"}}}	1674335521209	1674335521209	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	s7ERKEY+dnJdH6Xj4XtVv56z0OmGt0rVj/XZ4mrAI9g=                    	gGmbbCtNmie4XLL59lBwr26X_AKMz-oQEpEvWvNhF0F39xzAuzDQfw	9b3e5004-ee29-4cad-bbab-def0a35181fd
+2a7ffc20-be43-4379-a54c-a5f46ddd5ded	3c219e58-ed0e-4b18-ad48-f4f92793ae32	{"data":{"auth_time":1674335521,"grants":["authorization_code"]},"metaData":{"device":{"lastAccessedAddress":"192.168.48.1","lastAccessedInstant":1674335768129,"name":"macOS Chrome","type":"BROWSER"},"scopes":["offline_access"]}}	1674335521368	1674335768129	\N	\N	PYaOAEffwSI2za9Cpmaq21v558h80vEdmYEr/tRytYg=                    	xvDx7f7p_uC1iZdkfMQN4w4ucAlL6WXu5ycq9KCHhcGtS-96LhU-vQ	9b3e5004-ee29-4cad-bbab-def0a35181fd
+440a7c9d-e598-45d7-8d8e-e2f1b12f0bfe	\N	{"data":{},"metaData":{"device":{"lastAccessedAddress":"192.168.48.1","lastAccessedInstant":1674335819451,"name":"macOS Chrome","type":"BROWSER"}}}	1674335806158	1674335819451	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	UWsdCRV/IBX5wsTMMfEqkQFH6qC4FT9rBIexPSeLLzI=                    	vF9Xqh90pBLGQIVxisxmNltIomuGBvnA9iDeES0zbtDUcqm__XPLjA	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
+238af754-573a-49c1-be0a-dda3a35b2103	\N	{"data":{},"metaData":{"device":{"lastAccessedAddress":"192.168.144.1","lastAccessedInstant":1674336512300,"name":"iPhone/iPod Safari","type":"BROWSER"}}}	1674336465537	1674336512300	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	fhrpP4L/BLs6Bk48za6y84wwBnIkTkG7VoIQX5MsFJU=                    	oGfhRxwyKEi7eanqqqpn5h_WpH6JjfogEdmbSPHxjKuDsiGPiJGJZw	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
+14e77c3a-fcb6-482d-a721-1ecd1edae398	\N	{"data":{},"metaData":{"device":{"lastAccessedAddress":"192.168.192.1","lastAccessedInstant":1674343029646,"name":"macOS Mozilla","type":"BROWSER"}}}	1674343029646	1674343029646	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	cxsTnGxKanZIjJYXHcdK/5dTn0Jciq/l9WBr6nn0fwk=                    	znhYuzXHmpa7BAdgNnKwFS7rLbZCqgXs-77v-_VLSOJNAY0U1rr1DQ	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
+5dfe31b7-2ce9-4500-a369-170a707ae5ca	\N	{"data":{},"metaData":{"device":{"lastAccessedAddress":"172.18.0.1","lastAccessedInstant":1674344515948,"name":"iPhone/iPod Safari","type":"BROWSER"}}}	1674344477392	1674344515948	fcd64b92-594a-a9dc-90fc-14eb73764404	\N	1tgvwHxBV52hvqJpYT7BKrsbXuoPebnSHIzL4/WFJ5o=                    	Fqh4SJ6yF99V7ABT_gDOgeev21Jit1XnM2NYUcz6sgrPBtrLm5qNhw	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8
 \.
 
 
@@ -3042,8 +2810,7 @@ COPY public.user_consents_email_plus (id, next_email_instant, user_consents_id) 
 --
 
 COPY public.user_registrations (id, applications_id, authentication_token, clean_speak_id, data, insert_instant, last_login_instant, last_update_instant, timezone, username, username_status, users_id, verified) FROM stdin;
-c52a70d0-9f75-442b-a3fc-bab85150319f	3c219e58-ed0e-4b18-ad48-f4f92793ae32	\N	\N	{"data":{},"preferredLanguages":[],"tokens":{}}	1673100039670	1676310099891	1673100039670	\N	\N	0	9b3e5004-ee29-4cad-bbab-def0a35181fd	t
-f001aa2a-8bbe-4b90-bcbd-47b0b13fbc67	c4f0cc44-d3cc-4b76-a68f-91e2df829cd9	\N	\N	{"data":{},"preferredLanguages":[],"tokens":{}}	1675440580466	1676310556566	1675440580466	\N	\N	0	0d8b1119-4f11-40e1-b9c7-e74cec72cbd8	t
+c52a70d0-9f75-442b-a3fc-bab85150319f	3c219e58-ed0e-4b18-ad48-f4f92793ae32	\N	\N	{"data":{},"preferredLanguages":[],"tokens":{}}	1673100039670	1674335521200	1673100039670	\N	\N	0	9b3e5004-ee29-4cad-bbab-def0a35181fd	t
 \.
 
 
@@ -3103,35 +2870,35 @@ COPY public.webhooks_tenants (webhooks_id, tenants_id) FROM stdin;
 -- Name: audit_logs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: fusionauth
 --
 
-SELECT pg_catalog.setval('public.audit_logs_id_seq', 55, true);
+SELECT pg_catalog.setval('public.audit_logs_id_seq', 51, true);
 
 
 --
 -- Name: event_logs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: fusionauth
 --
 
-SELECT pg_catalog.setval('public.event_logs_id_seq', 2, true);
+SELECT pg_catalog.setval('public.event_logs_id_seq', 1, true);
 
 
 --
 -- Name: identities_id_seq; Type: SEQUENCE SET; Schema: public; Owner: fusionauth
 --
 
-SELECT pg_catalog.setval('public.identities_id_seq', 3, true);
+SELECT pg_catalog.setval('public.identities_id_seq', 2, true);
 
 
 --
 -- Name: raw_application_registration_counts_id_seq; Type: SEQUENCE SET; Schema: public; Owner: fusionauth
 --
 
-SELECT pg_catalog.setval('public.raw_application_registration_counts_id_seq', 4, true);
+SELECT pg_catalog.setval('public.raw_application_registration_counts_id_seq', 1, true);
 
 
 --
 -- Name: raw_global_registration_counts_id_seq; Type: SEQUENCE SET; Schema: public; Owner: fusionauth
 --
 
-SELECT pg_catalog.setval('public.raw_global_registration_counts_id_seq', 4, true);
+SELECT pg_catalog.setval('public.raw_global_registration_counts_id_seq', 2, true);
 
 
 --
